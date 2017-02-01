@@ -1,2 +1,2 @@
 # Accessibility playbook
-Guidelines to help teams create an accessible project
+Guidelines to help teams create accessible and inclusive projects
