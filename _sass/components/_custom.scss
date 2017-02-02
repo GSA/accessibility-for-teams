@@ -98,3 +98,16 @@ $sidenav-border: 1px solid $color-gray-lightest;
   background-color: $color-white;
   padding: $site-margins;
 }
+
+code {
+  background-color: $color-gray-lightest;
+  font-family: Consolas, Monaco, "Andale Mono", monospace;
+  font-size: 1.3rem;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+
+  &::before, &::after {
+    letter-spacing: -0.2em;
+    content: '\00a0';
+  }
+}
