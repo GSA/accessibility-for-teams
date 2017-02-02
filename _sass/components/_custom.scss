@@ -64,6 +64,8 @@ $sidenav-border: 1px solid $color-gray-lightest;
   }
 
   a {
+    font-size: 16px;
+
     &:hover {
       color: $color-white;
       background-color: $color-gray;
@@ -71,7 +73,24 @@ $sidenav-border: 1px solid $color-gray-lightest;
 
     &.usa-current {
       border-left: none;
+      padding-left: 1.8rem;
     }
+  }
+
+  .fa {
+//    float: right;
+    margin-right: 11px;
+  }
+
+  .fa-check {
+    color: $color-green;
+    margin-right: 7px;
+    margin-top: 2px;
+  }
+
+  .fa-circle {
+    color: $color-gray-lighter;
+    font-size: 13px;
   }
 }
 
