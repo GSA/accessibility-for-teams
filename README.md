@@ -1,6 +1,16 @@
 # Accessibility playbook
 Guidelines to help teams create accessible and inclusive projects
 
+
+## Running the site
+
+The Accessibility Playbook runs on Jekyll. To run it locally:
+
+- Clone the repository.
+- Get [Jekyll] and the necessary dependencies: `bundle install`
+- Run the web server with `jekyll serve`
+- Visit the local site at http://localhost:4000
+
 ## Contributing
 
 See [CONTRIBUTING](CONTRIBUTING.md) for additional information.
