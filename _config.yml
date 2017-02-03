@@ -17,8 +17,8 @@ title: Accessibility Playbook
 # email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   Guidelines to help teams create accessible and inclusive projects
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+# baseurl: "" # the subpath of your site, e.g. /blog
+# url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 # github_username:  jekyll
 imagepath: "/assets/img/lib/uswds/"
