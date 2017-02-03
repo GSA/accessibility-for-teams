@@ -24,7 +24,7 @@ body {
 @include media($nav-width) {
   .usa-header-basic {
     .usa-navbar {
-      width: 50%;
+      width: 60%;
     }
   }
 }
@@ -106,8 +106,46 @@ code {
   padding-top: 0.2em;
   padding-bottom: 0.2em;
 
-  &::before, &::after {
+  &::before,
+  &::after {
     letter-spacing: -0.2em;
     content: '\00a0';
   }
+}
+
+.page-home {
+  .usa-navbar {
+    height: 20rem;
+  }
+
+  .usa-header-basic {
+    .usa-logo {
+      @include media($nav-width) {
+        top: 4rem;
+        bottom: initial;
+        font-size: $title-font-size;
+      }
+    }
+  }
+
+  .usa-logo-text {
+    @include media($nav-width) {
+      font-size: $h1-font-size;
+    }
+  }
+
+  .page-body {
+    border-top: 10px solid #938CC5;
+  }
+
+  .main-content {
+    margin-top: -3rem;
+  }
+}
+
+.home-heading-subtitle {
+  color: #cad9ef;
+  font-weight: normal;
+  font-size: $h3-font-size;
+  margin-top: 1rem;
 }
