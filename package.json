@@ -1,0 +1,22 @@
+{
+  "name": "accessibility-playbook",
+  "version": "1.0.0",
+  "description": "Guidelines to help teams create accessible and inclusive projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/18F/accessibility-playbook.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/18F/accessibility-playbook/issues"
+  },
+  "homepage": "https://github.com/18F/accessibility-playbook#readme",
+  "dependencies": {
+    "uswds": "^0.14.0"
+  }
+}

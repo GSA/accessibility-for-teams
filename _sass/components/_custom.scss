@@ -1,0 +1,113 @@
+body {
+  background-color: $color-gray-lightest;
+}
+
+.usa-header {
+  background-color: darkslateblue; // could also use $primary-darkest or $gray-dark
+
+  @include media($nav-width) {
+    border-bottom-color: $color-gray-lighter;
+  }
+}
+
+.usa-logo {
+  a {
+    color: $color-white;
+  }
+}
+
+.main-content {
+  margin-bottom: 6rem;
+  margin-top: 6rem;
+}
+
+@include media($nav-width) {
+  .usa-header-basic {
+    .usa-navbar {
+      width: 50%;
+    }
+  }
+}
+
+@include media($nav-width) {
+  .usa-navbar {
+    height: 7.3rem;
+  }
+}
+
+.page-wrapper {
+  // margin-bottom: 6rem !important;
+  // margin-top: 6rem !important;
+
+  h2 {
+    margin-top: $site-margins;
+  }
+}
+
+.page-title {
+  font-size: $h6-font-size;
+  // font-weight: normal;
+  letter-spacing: 0.2px;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+$sidenav-border: 1px solid $color-gray-lightest;
+
+.usa-sidenav-list {
+  background-color: $color-white;
+  // border: 1px solid $color-gray-lightest;
+
+  > li {
+    border-top: 2px solid $color-gray-lightest;
+
+  }
+
+  a {
+    font-size: 16px;
+
+    &:hover {
+      color: $color-white;
+      background-color: $color-gray;
+    }
+
+    &.usa-current {
+      border-left: none;
+      padding-left: 1.8rem;
+    }
+  }
+
+  .fa {
+//    float: right;
+    margin-right: 11px;
+  }
+
+  .fa-check {
+    color: $color-green;
+    margin-right: 7px;
+    margin-top: 2px;
+  }
+
+  .fa-circle {
+    color: $color-gray-lighter;
+    font-size: 13px;
+  }
+}
+
+.page-body {
+  background-color: $color-white;
+  padding: $site-margins;
+}
+
+code {
+  background-color: $color-gray-lightest;
+  font-family: Consolas, Monaco, "Andale Mono", monospace;
+  font-size: 1.3rem;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+
+  &::before, &::after {
+    letter-spacing: -0.2em;
+    content: '\00a0';
+  }
+}
