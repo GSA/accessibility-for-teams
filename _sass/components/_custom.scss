@@ -149,3 +149,8 @@ code {
   font-size: $h3-font-size;
   margin-top: 1rem;
 }
+
+[role="contentinfo"] {
+  @include padding(1rem null);
+  background-color: $color-gray-lighter;
+}
