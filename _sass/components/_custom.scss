@@ -154,3 +154,17 @@ code {
   @include padding(1rem null);
   background-color: $color-gray-lighter;
 }
+
+.button-question {
+  background-color: $color-gold-light;
+  color: $color-base;
+
+  &:hover {
+    background-color: $color-gold;
+    color: $color-base;
+  }
+}
+
+.button-skip {
+  float: right;
+}
