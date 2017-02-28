@@ -18,7 +18,11 @@ body {
 
 .main-content {
   margin-bottom: 6rem;
-  margin-top: 6rem;
+  margin-top: 1.5rem;
+
+  @include media($large-screen) {
+    margin-top: 6rem;
+  }
 }
 
 @include media($nav-width) {
@@ -32,6 +36,47 @@ body {
 @include media($nav-width) {
   .usa-navbar {
     height: 7.3rem;
+  }
+}
+
+[role="navigation"] {
+  @include media($nav-width) {
+    background-color: transparent;
+  }
+}
+
+.usa-nav {
+  padding-top: 1.6rem;
+}
+
+.usa-nav-primary > li > a {
+  @include media($nav-width) {
+    color: #cad9ef;
+  }
+
+  &.usa-page-current {
+    @include media($nav-width) {
+      color: $color-white;
+    }
+
+    > span {
+      @include media($nav-width) {
+        border-bottom: 0.7rem solid $color-white;
+        padding-bottom: 1rem;
+      }
+    }
+  }
+
+  &:hover {
+    @include media($nav-width) {
+      color: $color-white;
+    }
+  }
+}
+
+.usa-nav-link:hover span {
+  @include media($nav-width) {
+    border-bottom-color: $color-white;
   }
 }
 
@@ -54,9 +99,12 @@ body {
 
 $sidenav-border: 1px solid $color-gray-lightest;
 
+.sidenav {
+  margin-bottom: 1.5rem;
+}
+
 .usa-sidenav-list {
   background-color: $color-white;
-  // border: 1px solid $color-gray-lightest;
 
   > li {
     border-top: 2px solid $color-gray-lightest;
@@ -78,7 +126,6 @@ $sidenav-border: 1px solid $color-gray-lightest;
   }
 
   .fa {
-//    float: right;
     margin-right: 11px;
   }
 
@@ -92,6 +139,11 @@ $sidenav-border: 1px solid $color-gray-lightest;
     color: $color-gray-lighter;
     font-size: 13px;
   }
+}
+
+.fa.usa-media_block-img {
+  margin-bottom: 8px;
+  margin-top: 4px;
 }
 
 .page-body {
@@ -166,7 +218,9 @@ code {
 }
 
 .button-skip {
-  float: right;
+  @include media($nav-width) {
+    float: right;
+  }
 }
 
 .fa-arrow-right {
