@@ -225,7 +225,7 @@ code {
   margin-left: 4px;
 }
 
-@include media($nav-width) {
+@include media($large-screen) {
   .sticky {
     position: -webkit-sticky;
     position: sticky;
