@@ -225,14 +225,16 @@ code {
   margin-left: 4px;
 }
 
-.sticky {
+@include media($nav-width) {
+  .sticky {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-}
+  }
 
-.sticky:before,
-.sticky:after {
+  .sticky:before,
+  .sticky:after {
     content: '';
     display: table;
+  }
 }
