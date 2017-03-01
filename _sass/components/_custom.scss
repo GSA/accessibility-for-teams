@@ -80,10 +80,7 @@ body {
   }
 }
 
-.page-wrapper {
-  // margin-bottom: 6rem !important;
-  // margin-top: 6rem !important;
-
+article.page-body {
   h2 {
     margin-top: 1.5rem;
   }
@@ -226,4 +223,16 @@ code {
 .fa-arrow-right {
   font-size: 90%;
   margin-left: 4px;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.sticky:before,
+.sticky:after {
+    content: '';
+    display: table;
 }

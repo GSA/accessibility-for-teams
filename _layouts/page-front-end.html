@@ -2,7 +2,6 @@
 layout: default
 ---
 
-<div class="page-wrapper">
   {% include sidenav/front-end.html %}
   <article class="usa-width-three-fourths page-body">
 
@@ -10,9 +9,6 @@ layout: default
       <h1 class="page-title">{{ page.title | escape }}</h1>
     </header>
 
-    <div class="">
-      {{ content }}
-    </div>
+    {{ content }}
 
   </article>
-</div>
