@@ -81,7 +81,7 @@ body {
 }
 
 article.page-body {
-  h2 {
+  h2:first-of-type {
     margin-top: 1.5rem;
   }
 }
