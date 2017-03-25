@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+  {% if page.permalink contains 'front-end' %}
+    {% include sidenav/front-end.html %}
+  {% elsif page.permalink contains 'content-design' %}
+    {% include sidenav/content-design.html %}
+  {% elsif page.permalink contains 'visual-design' %}
+    {% include sidenav/visual-design.html %}
+  {% endif %}
+  <article class="usa-width-three-fourths page-body">
+
+    <header class="post-header">
+      <h1 class="page-title">{{ page.title | escape }}</h1>
+    </header>
+
+    {{ content }}
+
+  </article>

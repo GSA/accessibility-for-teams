@@ -53,17 +53,17 @@
       </button>
       <ul class="usa-nav-primary usa-accordion">
         <li>
-          <a class="usa-nav-link {% if page.layout == 'page-front-end' %}usa-page-current{% endif %}" href="{{ site.baseurl }}/front-end/getting-started/">
+          <a class="usa-nav-link {% if page.permalink contains 'front-end' %}usa-page-current{% endif %}" href="{{ site.baseurl }}/front-end/getting-started/">
             <span>Front end</span>
           </a>
         </li>
         <li>
-          <a class="usa-nav-link {% if page.layout == 'page-content' %}usa-page-current{% endif %}" href="{{ site.baseurl }}/content-design/getting-started/">
+          <a class="usa-nav-link {% if page.permalink contains 'content-design' %}usa-page-current{% endif %}" href="{{ site.baseurl }}/content-design/getting-started/">
             <span>Content design</span>
           </a>
         </li>
         <li>
-          <a class="usa-nav-link {% if page.layout == 'page-visual-design' %}usa-page-current{% endif %}" href="{{ site.baseurl }}/visual-design/getting-started/">
+          <a class="usa-nav-link {% if page.permalink contains 'visual-design' %}usa-page-current{% endif %}" href="{{ site.baseurl }}/visual-design/getting-started/">
             <span>Visual design</span>
           </a>
         </li>
