@@ -31,6 +31,14 @@ body {
       width: 48%;
     }
   }
+
+  .page-home {
+    .usa-header-basic {
+      .usa-navbar {
+        width: 60%;
+      }
+    }
+  }
 }
 
 @include media($nav-width) {
