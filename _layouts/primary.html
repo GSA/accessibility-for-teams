@@ -8,6 +8,8 @@ layout: default
     {% include sidenav/content-design.html %}
   {% elsif page.permalink contains 'visual-design' %}
     {% include sidenav/visual-design.html %}
+  {% elsif page.permalink contains 'ux' %}
+    {% include sidenav/ux.html %}
   {% elsif page.permalink contains 'product-manager' %}
     {% include sidenav/product-manager.html %}
   {% endif %}
