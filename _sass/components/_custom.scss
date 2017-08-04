@@ -208,7 +208,7 @@ code {
 }
 
 [role="contentinfo"] {
-  @include padding(1rem null);
+  @include padding(2rem null);
   background-color: $color-gray-lighter;
 }
 
@@ -244,5 +244,18 @@ code {
   .sticky:after {
     content: '';
     display: table;
+  }
+}
+
+.footer-learn_more {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.footer-link-edit {
+  float: right;
+
+  i {
+    margin-right: 4px;
   }
 }
