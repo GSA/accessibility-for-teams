@@ -1,6 +1,5 @@
-# Accessibility playbook
-Guidelines to help teams create accessible and inclusive projects
-
+# Role-based Accessibility Guidelines
+Practices for embedding accessibility and inclusive design into 18F teams.
 
 ## Running the site
 
