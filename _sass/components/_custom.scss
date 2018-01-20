@@ -105,9 +105,23 @@ article.page-body {
 }
 
 $sidenav-border: 1px solid $color-gray-lightest;
+$article-width: 745px;
 
 .sidenav {
   margin-bottom: 1.5rem;
+
+  @include media($article-width) {
+    margin-right: 30px;
+    width: 227px;
+  }
+}
+
+.article-body {
+  width: 100%;
+
+  @include media($article-width) {
+    width: calc(100% - 257px);
+  }
 }
 
 .usa-sidenav-list {
@@ -187,12 +201,11 @@ code {
   }
 
   .usa-header-basic {
-    // margin-top: 1rem;
-
     .usa-logo {
+      margin-right: 1.5rem;
+
       @include media($small-screen) {
         bottom: initial;
-        // margin-top: 0;
         top: 4rem;
       }
     }
@@ -208,6 +221,7 @@ code {
 
   .page-body {
     border-top: 10px solid #938CC5;
+    max-width: 730px;
   }
 
   .main-content {
