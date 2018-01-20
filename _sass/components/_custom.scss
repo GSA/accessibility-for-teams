@@ -10,10 +10,27 @@ body {
   }
 }
 
+// Sticky footer
+.page-primary {
+  @include media($medium-screen) {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+
+    .main-content {
+      flex: 1;
+    }
+  }
+}
+
 .usa-logo {
   a {
     color: $color-white;
   }
+}
+
+.usa-navbar {
+  border: none;
 }
 
 .main-content {
@@ -189,7 +206,7 @@ code {
 .page-home {
   .usa-navbar {
     height: 20rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
 
     @include media($nav-width) {
       margin-top: 0;
