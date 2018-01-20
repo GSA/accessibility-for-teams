@@ -35,7 +35,7 @@ body {
   .page-home {
     .usa-header-basic {
       .usa-navbar {
-        width: 70%;
+        width: 100%;
       }
     }
   }
@@ -175,20 +175,33 @@ code {
 .page-home {
   .usa-navbar {
     height: 20rem;
+    margin-top: 1rem;
+
+    @include media($nav-width) {
+      margin-top: 0;
+    }
+  }
+
+  .usa-menu-btn {
+    display: none;
   }
 
   .usa-header-basic {
+    // margin-top: 1rem;
+
     .usa-logo {
-      @include media($nav-width) {
-        top: 4rem;
+      @include media($small-screen) {
         bottom: initial;
-        font-size: $title-font-size;
+        // margin-top: 0;
+        top: 4rem;
       }
     }
   }
 
   .usa-logo-text {
-    @include media($nav-width) {
+    font-size: $h2-font-size;
+
+    @include media($medium-screen) {
       font-size: $h1-font-size;
     }
   }
@@ -199,6 +212,10 @@ code {
 
   .main-content {
     margin-top: -3rem;
+  }
+
+  h2:first-of-type {
+    margin-bottom: 1em;
   }
 }
 
@@ -316,11 +333,6 @@ code {
   }
 }
 
-.page-home {
-  h2:first-of-type {
-    margin-bottom: 1em;
-  }
-}
 
 
 
