@@ -69,8 +69,8 @@ body {
 
     > span {
       @include media($nav-width) {
-        border-bottom: 0.7rem solid $color-white;
-        padding-bottom: 1rem;
+        border-bottom: 0.4rem solid $color-white;
+        padding-bottom: 0.6rem;
       }
     }
   }
@@ -85,6 +85,8 @@ body {
 .usa-nav-link:hover span {
   @include media($nav-width) {
     border-bottom-color: $color-white;
+    border-bottom-width: 0.4rem;
+    padding-bottom: 0.6rem;
   }
 }
 
@@ -269,17 +271,19 @@ code {
   li {
     display: inline-block;
     text-align: center;
+    margin-bottom: 5px;
     width: 49%;
 
     @include media($medium-screen) {
+      margin-bottom: 0;
       width: 19%;
     }
   }
 
   a {
     border: 1px solid rgba(72, 61, 139, 0.23);
-    border-radius: 4px;
-    color: darkslateblue;
+    border-radius: 5px;
+    color: #594bab;
     display: inline-block;
     font-size: 15px;
     font-weight: bold;
