@@ -259,3 +259,83 @@ code {
     margin-right: 4px;
   }
 }
+
+// Home icons
+
+
+.home-roles-list {
+  @include unstyled-list;
+
+  li {
+    display: inline-block;
+    text-align: center;
+    width: 49%;
+
+    @include media($medium-screen) {
+      width: 19%;
+    }
+  }
+
+  a {
+    border: 1px solid rgba(72, 61, 139, 0.23);
+    border-radius: 4px;
+    color: darkslateblue;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 15px 0;
+    text-decoration: none;
+    width: 100%;
+
+    &:hover {
+      background-color: #eeebf7;
+    }
+  }
+
+  img {
+    width: 6rem;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  .fa {
+    font-size: 12px;
+    margin-left: 5px;
+  }
+}
+
+.page-home {
+  h2:first-of-type {
+    margin-bottom: 1em;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
