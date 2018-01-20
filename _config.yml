@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Accessibility Playbook
+title: Role-based Accessibility Guide
 # email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
   Guidelines to help teams create accessible and inclusive projects
