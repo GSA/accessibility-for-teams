@@ -392,6 +392,10 @@ code {
     -ms-user-select: none;
     user-select: none;
   }
+
+  &:visited {
+    color: #333;
+  }
 }
 
 .footer-text {
