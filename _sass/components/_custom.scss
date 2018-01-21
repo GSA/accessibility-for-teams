@@ -297,25 +297,6 @@ code {
   }
 }
 
-.footer-learn_more {
-  display: inline-block;
-  margin-bottom: 0;
-}
-
-.footer-link-edit {
-  float: right;
-
-  i {
-    margin-right: 4px;
-  }
-}
-
-.site-footer {
-  a {
-    color: $color-primary-darker;
-  }
-}
-
 // Home icons
 
 
@@ -364,11 +345,107 @@ code {
   }
 }
 
+.footer-button {
+  border: 1px solid #c3c3c3;
+  border-bottom-color: #b8b8b8;
+  border-radius: $border-radius;
+  background: #f8f8f8;
+  background: linear-gradient(#fff, #eee);
+  font: inherit;
+  font-size: 15px;
+  color: #333;
+  text-shadow: 0 1px 0 #fff;
+  padding: 6px 12px 8px;
+  -webkit-box-shadow: 0 1px 0 #aeb0b55e;
+  line-height: 1.33em;
+  margin-bottom: 0.8em;
+  white-space: nowrap;
+  text-decoration: none;
 
+  &:first-of-type {
+    margin-right: 0.5em;
+  }
 
+  &:hover {
+    background: linear-gradient(#fff, #e3e3e3);
+    border-color: #aeb0b5cc;
+    border-bottom-color: #5b616b9e;
+    text-decoration: none;
+  }
 
+  &:active {
+    color: #888;
+    background: linear-gradient(#e3e3e3, #eee);
+    border-color: #bbb;
+    border-top-color: #aaa;
+    border-bottom-color: #b3b3b3;
+    text-shadow: none;
+    -webkit-box-shadow: inset 1px 1px 0 #ddd;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+}
 
+.footer-text {
+  display: inline-block;
 
+  @include media($medium-screen) {
+    margin-top: -4px;
+  }
+
+  p {
+    margin-bottom: 5px;
+
+    &:first-of-type {
+      @include media($medium-screen) {
+        margin-bottom: 3px;
+      }
+    }
+
+    @include media($medium-screen) {
+      margin-bottom: 0;
+    }
+  }
+
+  a {
+    color: $color-primary-darker;
+  }
+}
+
+.footer-buttons {
+  margin-top: 1em;
+
+  @include media($medium-screen) {
+    float: right;
+    margin-top: 6px;
+  }
+
+  .fa {
+    margin-right: 5px;
+  }
+}
+
+.logo-links {
+  margin-bottom: 1rem;
+  margin-right: 2rem;
+
+  @include media($medium-screen) {
+    float: left;
+    margin-bottom: 0;
+  }
+
+  img {
+    width: 3.2rem;
+  }
+
+  a {
+    @include media-link;
+  }
+}
 
 
 

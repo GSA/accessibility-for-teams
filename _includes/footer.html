@@ -1,7 +1,22 @@
 <footer class="site-footer" role="contentinfo">
   <div class="usa-grid">
-    <p class="usa-text-small footer-learn_more"><a href="https://github.com/18F/accessibility-playbook">Learn more</a> about this project.</p>
-    <a class="footer-link-edit usa-text-small" href="https://github.com/18F/accessibility-playbook/edit/master/{{ page.path }}"><i class="fa fa-pencil" aria-hidden="true"></i>Edit this page</a>
+    <div class="logo-links">
+      <a href="http://www.gsa.gov/">
+        <img src="{{ site.baseurl }}/assets/img/logo-gsa.png" alt="GSA">
+      </a>
+    </div>
+    <div class="footer-text">
+      <p class="usa-text-small">A project of GSA’s <a href="https://www.gsa.gov/about-us/organization/federal-acquisition-service/technology-transformation-services">Technology Transformation Service</a>, maintained by the <a href="https://accessibility.18f.gov/">Accessibility Guild</a>.</p>
+      <p class="usa-text-small">This website is hosted on <a href="https://federalist.fr.cloud.gov/">Federalist</a>.</p>
+    </div>
+    <div class="footer-buttons">
+      <a class="footer-button usa-text-small" href="https://github.com/18F/accessibility-playbook/edit/master/{{ page.path }}">
+        <i class="fa fa-pencil" aria-hidden="true"></i>Edit this page
+      </a>
+      <a class="footer-button usa-text-small" href="https://github.com/18F/accessibility-playbook/issues/">
+        <i class="fa fa-github" aria-hidden="true"></i>File an issue
+      </a>
+    </div>
   </div>
 </footer>
 <script src="{{ "assets/js/uswds.min.js" | relative_url }}"></script>
