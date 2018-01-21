@@ -366,10 +366,15 @@ code {
     margin-right: 3px;
   }
 
+  &:visited {
+    color: #333;
+  }
+
   &:hover {
     background: linear-gradient(#fff, #e3e3e3);
     border-color: #aeb0b5cc;
     border-bottom-color: #5b616b9e;
+    color: $color-primary-darker;
     text-decoration: none;
 
     .fa {
@@ -391,10 +396,6 @@ code {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-  }
-
-  &:visited {
-    color: #333;
   }
 }
 
