@@ -37,7 +37,7 @@ body {
   margin-bottom: 6rem;
   margin-top: 1.5rem;
 
-  @include media($large-screen) {
+  @include media($nav-width) {
     margin-top: 6rem;
   }
 }
@@ -127,7 +127,7 @@ $article-width: 745px;
 .sidenav {
   margin-bottom: 1.5rem;
 
-  @include media($article-width) {
+  @include media($small-screen) {
     margin-right: 30px;
     width: 227px;
   }
@@ -221,10 +221,22 @@ code {
     .usa-logo {
       margin-right: 1.5rem;
 
+      // @include media($nav-width) {
+      //   margin-left: 3rem;
+      // }
+
       @include media($small-screen) {
-        bottom: initial;
-        top: 4rem;
+        // bottom: initial;
+        // top: 4rem;
+
+        top: 47%;
+        transform: translateY(-50%);
+        position: relative;
       }
+
+      // @include media($large-screen) {
+      //   margin-left: 0;
+      // }
     }
   }
 
