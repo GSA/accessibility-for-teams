@@ -182,6 +182,12 @@ $article-width: 745px;
     .fa {
       color: $color-primary;
     }
+
+    &:hover {
+      .fa {
+        color: $color-white;
+      }
+    }
   }
 }
 
