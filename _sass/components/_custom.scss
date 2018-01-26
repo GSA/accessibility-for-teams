@@ -177,6 +177,12 @@ $article-width: 745px;
     color: $color-gray-lighter;
     font-size: 13px;
   }
+
+  .usa-current {
+    .fa {
+      color: $color-primary;
+    }
+  }
 }
 
 .fa.usa-media_block-img {
