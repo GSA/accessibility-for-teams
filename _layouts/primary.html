@@ -25,12 +25,14 @@ layout: default
 
     {% if page.personas %}
     <p class="personas-first"><strong>Why it’s important:</strong> {{ page.personas.first }}</p>
+    {% if page.personas.size > 1 %}
     <details class="personas-more">
       <summary>View more</summary>
       {% for persona in page.personas offset:1 %}
         <p>{{ persona }}</p>
       {% endfor %}
     </details>
+    {% endif %}
     {% endif %}
 
     {{ content }}
