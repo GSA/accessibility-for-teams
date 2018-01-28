@@ -515,7 +515,14 @@ summary {
   display: inline;
 }
 
-
+[href^="https://gsa-tts.slack.com"],
+[href^="https://github.com/18F/Accessibility_Reviews"] {
+  &:after {
+    content: "\1F512";
+    font-size: 0.75em;
+    vertical-align: text-top;
+  }
+}
 
 
 
