@@ -492,7 +492,14 @@ code {
   margin-right: 7px;
 }
 
-
+.page-getting-started {
+  .article-body {
+    p:first-of-type {
+      // @extend .usa-font-lead;
+      font-size: 2rem;
+    }
+  }
+}
 
 
 
