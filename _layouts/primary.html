@@ -19,6 +19,20 @@ layout: default
       <h1 class="page-title">{{ page.title | escape }}</h1>
     </header>
 
+    {% if page.question %}
+    <h2>{{ page.question }}</h2>
+    {% endif %}
+
+    {% if page.personas %}
+    <p class="personas-first"><strong>Why it’s important:</strong> {{ page.personas.first }}</p>
+    <details class="personas-more">
+      <summary>View more</summary>
+      {% for persona in page.personas offset:1 %}
+        <p>{{ persona }}</p>
+      {% endfor %}
+    </details>
+    {% endif %}
+
     {{ content }}
 
   </article>

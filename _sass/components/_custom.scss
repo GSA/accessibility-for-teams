@@ -501,12 +501,19 @@ code {
   }
 }
 
+summary {
+  @extend a;
+  cursor: pointer;
+}
 
+.personas-first {
+  margin-right: 7px;
+}
 
-
-
-
-
+.personas-first,
+.personas-more  {
+  display: inline;
+}
 
 
 
