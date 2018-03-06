@@ -45,7 +45,7 @@ body {
 @include media($nav-width) {
   .usa-header-basic {
     .usa-navbar {
-      width: calc(100% - 560px);
+      width: 350px;
     }
 
     .usa-logo {
