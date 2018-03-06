@@ -1,3 +1,47 @@
+// Heading mixins
+@mixin title {
+  font-size: $title-font-size;
+  font-weight: $font-bold;
+}
+
+@mixin h1 {
+  font-size: $h1-font-size;
+  font-weight: $font-bold;
+}
+
+@mixin h2 {
+  font-size: $h2-font-size;
+  font-weight: $font-bold;
+}
+
+@mixin h3 {
+  font-size: $h3-font-size;
+  font-weight: $font-bold;
+}
+
+@mixin h4 {
+  font-size: $h4-font-size;
+  font-weight: $font-bold;
+}
+
+@mixin h5 {
+  font-size: $h5-font-size;
+  font-weight: $font-bold;
+}
+
+@mixin h6 {
+  font-size: $h6-font-size;
+  font-weight: $font-normal;
+  line-height: $base-line-height;
+  text-transform: uppercase;
+}
+
+// Focus state mixin
+@mixin focus {
+  outline: $focus-outline;
+  outline-offset: $focus-spacing;
+}
+
 // Mobile-first media query helper
 @mixin media($bp) {
   @media screen and (min-width: #{$bp}) {
@@ -9,6 +53,15 @@
 @mixin sr-only() {
   position: absolute;
   left: -999em;
+}
+
+// This "negates" the sr-only() helper; useful if
+// we want the default state of something to be
+// for screen readers only, but we want to force
+// it to show for sighted users under more specific
+// conditions.
+@mixin not-sr-only() {
+  position: static;
 }
 
 .usa-sr-only {
@@ -94,25 +147,27 @@
 
 @mixin display-icon($icon, $direction, $size, $margin, $hover) {
   &::#{$direction} {
-    background-image: url(#{$image-path}/#{$icon}.png);
-    background-image: url(#{$image-path}/#{$icon}.svg);
+    background-image: url('#{$image-path}/#{$icon}.png');
+    background-image: url('#{$image-path}/#{$icon}.svg');
     background-size: 100%;
     content: '';
     display: inline-block;
     height: $size;
     width: $size;
 
+    /* stylelint-disable block-closing-brace-newline-after, at-rule-empty-line-before */
     @if $direction == 'after' {
       margin-left: $margin;
     } @else {
       margin-right: $margin;
     }
+    /* stylelint-enable */
   }
 
   @if $hover == 'hover' {
     &:hover::#{$direction} {
-      background-image: url(#{$image-path}/#{$icon}-hover.png);
-      background-image: url(#{$image-path}/#{$icon}-hover.svg);
+      background-image: url('#{$image-path}/#{$icon}-hover.png');
+      background-image: url('#{$image-path}/#{$icon}-hover.svg');
     }
   }
 }
@@ -136,7 +191,7 @@
     display: block;
     font-family: $font-sans;
     line-height: 1.3;
-    padding: 0.85rem 1rem 0.85rem 1.8rem;
+    padding: 0.85rem 1rem 0.85rem $site-margins-mobile;
     text-decoration: none;
 
     &:hover {
@@ -146,19 +201,19 @@
     }
 
     &:focus {
+      outline-offset: 0;
       position: relative;
       z-index: 1;
     }
 
-    &.usa-current {
-      border-left: 4px solid $color-primary;
+    &.usa-current { /* stylelint-disable-line selector-no-qualifying-type */
+      border-left: $sidenav-current-border-width solid $color-primary;
       color: $color-primary;
       font-weight: $font-bold;
-      padding-left: 1.4rem;
+      padding-left: $site-margins-mobile - $sidenav-current-border-width;
     }
   }
 }
-
 
 @mixin usa-sidenav-sublist {
   @include unstyled-list();
@@ -175,7 +230,7 @@
     line-height: $heading-line-height;
 
     &:hover,
-    &.usa-current {
+    &.usa-current { /* stylelint-disable-line selector-no-qualifying-type */
       border: none;
       padding-left: 2.8rem;
     }
@@ -184,6 +239,10 @@
   .usa-sidenav-sub_list {
     a {
       padding-left: 3.8rem;
+
+      &:focus {
+        outline-offset: 0;
+      }
 
       &:hover {
         padding-left: 3.8rem;

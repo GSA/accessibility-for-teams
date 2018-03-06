@@ -1,25 +1,21 @@
 /*! uswds @version */
 
 // Vendor -------------- //
-
 @import 'lib/bourbon';
 @import 'lib/neat';
 @import 'lib/normalize';
 
-
 // Core -------------- //
-
 @import 'core/variables';
 @import 'core/fonts';
-@import 'core/base';
 @import 'core/grid';
 @import 'core/utilities';
-
+@import 'core/base';
 
 // Elements -------------- //
 // Styles basic HTML elements
-
 @import 'elements/buttons';
+@import 'elements/embed';
 @import 'elements/figure';
 @import 'elements/inputs';
 @import 'elements/labels';
@@ -27,9 +23,7 @@
 @import 'elements/table';
 @import 'elements/typography';
 
-
 // Components -------------- //
-
 @import 'components/accordions';
 @import 'components/alerts';
 @import 'components/banner';

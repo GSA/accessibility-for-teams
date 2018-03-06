@@ -22,13 +22,12 @@ a {
     color: $color-primary-darker;
   }
 
-  &:visited {
-    color: $color-visited;
+  &:focus {
+    @include focus;
   }
 
-  &:focus {
-    box-shadow: $focus-shadow;
-    outline: 0;
+  &:visited {
+    color: $color-visited;
   }
 }
 
@@ -67,8 +66,7 @@ h1,
 h2,
 h3,
 h4,
-h5,
-h6 {
+h5 {
   clear: both;
   font-family: $font-serif;
   line-height: $heading-line-height;
@@ -76,43 +74,8 @@ h6 {
   margin-top: 1.5em;
 }
 
-// Create heading mixins
-
-@mixin title {
-  font-size: $title-font-size;
-  font-weight: $font-bold;
-}
-
-@mixin h1 {
-  font-size: $h1-font-size;
-  font-weight: $font-bold;
-}
-
-@mixin h2 {
-  font-size: $h2-font-size;
-  font-weight: $font-bold;
-}
-
-@mixin h3 {
-  font-size: $h3-font-size;
-  font-weight: $font-bold;
-}
-
-@mixin h4 {
-  font-size: $h4-font-size;
-  font-weight: $font-bold;
-}
-
-@mixin h5 {
-  font-size: $h5-font-size;
-  font-weight: $font-bold;
-}
-
-@mixin h6 {
+h6 {
   font-family: $font-sans;
-  font-size: $h6-font-size;
-  font-weight: $font-normal;
-  text-transform: uppercase;
 }
 
 h1 {
@@ -151,7 +114,9 @@ dfn {
 // Custom typography
 
 .usa-content {
-  p:not(.usa-font-lead) {
+  p,
+  ul:not(.usa-accordion):not(.usa-accordion-bordered),
+  ol:not(.usa-accordion):not(.usa-accordion-bordered) {
     max-width: $text-max-width;
   }
 }
@@ -199,28 +164,9 @@ dfn {
 .usa-font-lead {
   font-family: $font-serif;
   font-size: $lead-font-size;
+  font-weight: $font-normal;
   line-height: $lead-line-height;
   max-width: $lead-max-width;
-}
-
-.usa-image-block {
-  position: relative;
-}
-
-.usa-image-text-block {
-  color: $color-white;
-  left: 0;
-  margin-left: 8%;
-  position: absolute;
-  top: 0;
-}
-
-.usa-image-text {
-  margin-top: 0;
-}
-
-.usa-drop_text {
-  margin-bottom: 0;
 }
 
 .usa-background-dark {
@@ -248,7 +194,8 @@ dfn {
 // Removes top margin from first child and bottom margin from last child on
 // elements when they are within those layout elements.
 .usa-section,
-.usa-grid {
+.usa-grid,
+.usa-grid-full {
   > :first-child {
     margin-top: 0;
   }

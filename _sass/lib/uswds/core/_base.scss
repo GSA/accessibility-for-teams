@@ -13,20 +13,24 @@ html {
 
 body {
   background-color: $color-white;
+  color: $color-base;
   overflow-x: hidden;
 }
 
 // Hack for clearfixes
 .lt-ie9 {
   * {
-    // scss-lint:disable ImportantRule
-    filter: none !important;
+    filter: none !important; /* stylelint-disable-line declaration-no-important */
   }
 }
 
 // for IE < 11, see:
 // <http://caniuse.com/#feat=hidden>
 [hidden] {
-  // scss-lint:disable ImportantRule
-  display: none !important;
+  display: none !important; /* stylelint-disable-line declaration-no-important */
+}
+
+*:focus,
+.usa-focus {
+  @include focus;
 }

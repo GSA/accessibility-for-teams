@@ -45,7 +45,11 @@ body {
 @include media($nav-width) {
   .usa-header-basic {
     .usa-navbar {
-      width: calc(100% - 486px);
+      width: calc(100% - 560px);
+    }
+
+    .usa-logo {
+      bottom: 1.9rem;
     }
   }
 
@@ -143,6 +147,7 @@ $article-width: 745px;
 
 .usa-sidenav-list {
   background-color: $color-white;
+  border: none;
 
   > li {
     border-top: 2px solid $color-gray-lightest;
