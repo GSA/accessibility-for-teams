@@ -259,6 +259,7 @@ code {
   }
 
   .usa-logo-text {
+    color: $color-white;
     font-size: $h2-font-size;
 
     @include media($medium-screen) {
@@ -284,7 +285,7 @@ code {
   color: #cad9ef;
   font-weight: normal;
   font-size: $h3-font-size;
-  margin-top: 1rem;
+  margin-top: 0.8rem;
 }
 
 [role="contentinfo"] {

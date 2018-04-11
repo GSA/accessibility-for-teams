@@ -40,11 +40,13 @@
     <div class="usa-navbar">
       <button class="usa-menu-btn">Menu</button>
       <div class="usa-logo" id="logo">
-        <em class="usa-logo-text">
-          <a href="{{ site.baseurl }}/" accesskey="1" title="Home" aria-label="Home">{{ site.title }}</a>
-        </em>
         {% if page.title == 'Home' %}
-          <h2 class="home-heading-subtitle">Practices for embedding accessibility and inclusive design into teams</h2>
+          <h1 class="usa-logo-text">{{ site.title }}</h1>
+          <p class="home-heading-subtitle">Practices for embedding accessibility and inclusive design into teams</p>
+          {% else %}
+            <em class="usa-logo-text">
+              <a href="{{ site.baseurl }}/" accesskey="1" title="Home" aria-label="Home">{{ site.title }}</a>
+            </em>
         {% endif %}
       </div>
     </div>
