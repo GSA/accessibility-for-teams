@@ -532,8 +532,20 @@ summary {
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  /* IE10+ CSS styles go here */
+  /* IE 10 and 11 CSS styles go here */
   .page-primary {
     display: block;
+  }
+
+  summary {
+    display: none;
+  }
+}
+
+@supports (-ms-ime-align:auto) {
+  /* IE Edge 12+ CSS styles go here */
+
+  summary {
+    display: none;
   }
 }
