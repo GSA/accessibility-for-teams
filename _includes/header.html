@@ -1,5 +1,5 @@
 <a class="usa-skipnav" href="#main-content">Skip to main content</a>
-<header class="usa-header usa-header-basic" role="banner">
+<header class="usa-header usa-header-extended" role="banner">
   <!-- Gov banner BEGIN -->
   <div class="usa-banner">
     <div class="usa-accordion">
@@ -36,7 +36,6 @@
     </div>
   </div>
   <!-- Gov banner END -->
-  <div class="usa-nav-container">
     <div class="usa-navbar">
       <button class="usa-menu-btn">Menu</button>
       <div class="usa-logo" id="logo">
@@ -52,38 +51,39 @@
     </div>
     {% if page.title != "Home" %}
     <nav role="navigation" class="usa-nav">
-      <button class="usa-nav-close">
-        <img src="{{ site.baseurl }}{{ site.imagepath }}close.svg" alt="close">
-      </button>
-      <ul class="usa-nav-primary usa-accordion">
-        <li>
-          <a class="usa-nav-link {% if page.permalink contains 'product' %}usa-page-current{% endif %}" href="{{ site.baseurl }}/product/getting-started/">
-            <span>Product</span>
-          </a>
-        </li>
-        <li>
-          <a class="usa-nav-link {% if page.permalink contains 'content-design' %}usa-page-current{% endif %}" href="{{ site.baseurl }}/content-design/getting-started/">
-            <span>Content</span>
-          </a>
-        </li>
-        <li>
-          <a class="usa-nav-link {% if page.permalink contains 'ux' %}usa-page-current{% endif %}" href="{{ site.baseurl }}/ux/getting-started/">
-            <span>UX</span>
-          </a>
-        </li>
-        <li>
-          <a class="usa-nav-link {% if page.permalink contains 'visual-design' %}usa-page-current{% endif %}" href="{{ site.baseurl }}/visual-design/getting-started/">
-            <span>Visual design</span>
-          </a>
-        </li>
-        <li>
-          <a class="usa-nav-link {% if page.permalink contains 'front-end' %}usa-page-current{% endif %}" href="{{ site.baseurl }}/front-end/getting-started/">
-            <span>Front end</span>
-          </a>
-        </li>
-      </ul>
+      <div class="usa-nav-inner">
+        <button class="usa-nav-close">
+          <img src="{{ site.baseurl }}{{ site.imagepath }}close.svg" alt="close">
+        </button>
+        <ul class="usa-nav-primary usa-accordion">
+          <li>
+            <a class="usa-nav-link {% if page.permalink contains 'product' %}usa-page-current{% endif %}" href="{{ site.baseurl }}/product/getting-started/">
+              <span>Product management</span>
+            </a>
+          </li>
+          <li>
+            <a class="usa-nav-link {% if page.permalink contains 'content-design' %}usa-page-current{% endif %}" href="{{ site.baseurl }}/content-design/getting-started/">
+              <span>Content design</span>
+            </a>
+          </li>
+          <li>
+            <a class="usa-nav-link {% if page.permalink contains 'ux' %}usa-page-current{% endif %}" href="{{ site.baseurl }}/ux/getting-started/">
+              <span>UX design</span>
+            </a>
+          </li>
+          <li>
+            <a class="usa-nav-link {% if page.permalink contains 'visual-design' %}usa-page-current{% endif %}" href="{{ site.baseurl }}/visual-design/getting-started/">
+              <span>Visual design</span>
+            </a>
+          </li>
+          <li>
+            <a class="usa-nav-link {% if page.permalink contains 'front-end' %}usa-page-current{% endif %}" href="{{ site.baseurl }}/front-end/getting-started/">
+              <span>Front-end development</span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
     {% endif %}
-  </div>
 </header>
 <div class="usa-overlay"></div>
