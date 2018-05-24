@@ -4,6 +4,7 @@ body {
 
 .usa-header {
   background-color: darkslateblue; // could also use $primary-darkest or $gray-dark
+  z-index: auto;
 
   @include media($nav-width) {
     border-bottom-color: $color-gray-lighter;
