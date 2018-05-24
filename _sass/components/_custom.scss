@@ -2,6 +2,32 @@ body {
   background-color: $color-gray-lightest;
 }
 
+// Focus
+
+// a:focus,
+// .usa-footer-return-to-top a:focus {
+//   background-color: $color-gold;
+//   color: $color-base !important;
+// }
+
+// .home-roles-list,
+// .usa-nav-primary,
+// .usa-sidenav-list {
+//   a {
+//     background-color: transparent;
+//   }
+// }
+
+a,
+button,
+button.usa-menu-btn,
+.usa-accordion-button {
+  &:focus {
+    outline: 3px solid $color-gold !important;
+    outline-offset: 0;
+  }
+}
+
 .usa-header {
   background-color: darkslateblue; // could also use $primary-darkest or $gray-dark
   z-index: auto;
