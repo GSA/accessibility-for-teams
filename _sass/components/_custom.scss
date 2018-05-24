@@ -65,7 +65,7 @@ button.usa-menu-btn,
   margin-top: 1.5rem;
 
   @include media($nav-width) {
-    margin-top: 6rem;
+    margin-top: 5rem;
   }
 }
 
@@ -95,11 +95,11 @@ button.usa-menu-btn,
   }
 }
 
-[role="navigation"] {
-  @include media($nav-width) {
-    background-color: transparent;
-  }
-}
+// [role="navigation"] {
+//   @include media($nav-width) {
+//     background-color: transparent;
+//   }
+// }
 
 .usa-nav {
   padding-top: 1.6rem;
@@ -107,34 +107,37 @@ button.usa-menu-btn,
 
 .usa-nav-primary > li > a {
   @include media($nav-width) {
-    color: #cad9ef;
+    // color: #cad9ef;
   }
 
   &.usa-page-current {
     @include media($nav-width) {
-      color: $color-white;
+      // color: $color-white;
     }
 
     > span {
       @include media($nav-width) {
-        border-bottom: 0.4rem solid $color-white;
-        padding-bottom: 0.6rem;
+        border-bottom: 0.7rem solid darkslateblue;
+        color: $color-base;
+        padding-bottom: 1rem;
       }
     }
   }
 
   &:hover {
     @include media($nav-width) {
-      color: $color-white;
+      color: darkslateblue;
     }
   }
 }
 
-.usa-nav-link:hover span {
-  @include media($nav-width) {
-    border-bottom-color: $color-white;
-    border-bottom-width: 0.4rem;
-    padding-bottom: 0.6rem;
+.usa-header-extended {
+  .usa-nav-link:hover span {
+    @include media($nav-width) {
+      border-bottom-color: darkslateblue;
+      // border-bottom-width: 0.4rem;
+      padding-bottom: 1rem;
+    }
   }
 }
 
