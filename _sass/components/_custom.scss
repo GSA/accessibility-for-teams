@@ -28,6 +28,18 @@ button.usa-menu-btn,
   }
 }
 
+.site-footer {
+  a {
+    &:focus {
+      outline-color: #785AFC !important;
+    }
+  }
+}
+
+.usa-banner-button:focus {
+  outline-color: #8C73FC !important;
+}
+
 .usa-header {
   background-color: darkslateblue; // could also use $primary-darkest or $gray-dark
   z-index: auto;
