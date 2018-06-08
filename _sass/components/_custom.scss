@@ -63,6 +63,8 @@ button.usa-menu-btn,
 }
 
 .usa-logo {
+  margin-right: 1.5rem;
+
   a {
     color: $color-white;
   }
@@ -279,7 +281,7 @@ code {
 
   .usa-header-basic {
     .usa-logo {
-      margin-right: 1.5rem;
+      margin-left: 1.5rem;
 
       // @include media($nav-width) {
       //   margin-left: 3rem;
@@ -327,7 +329,12 @@ code {
   color: #cad9ef;
   font-weight: normal;
   font-size: $h3-font-size;
+  margin-bottom: 0;
   margin-top: 0.8rem;
+
+  @include media($nav-width) {
+    max-width: 720px;
+  }
 }
 
 [role="contentinfo"] {
