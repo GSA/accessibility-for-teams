@@ -19,6 +19,8 @@
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
+  <link rel="icon" type="image/png" href="{{ "/assets/img/favicon-32x32.png" | relative_url }}" sizes="32x32" />
+  <link rel="icon" type="image/png" href="{{ "/assets/img/favicon-16x16.png" | relative_url }}" sizes="16x16" />
 
   {% if jekyll.environment == 'production' and site.google_analytics %}
   {% include google-analytics.html %}
