@@ -7,7 +7,7 @@ layout: default
     <ul class="usa-sidenav-list">
     {% for item in site.data.navigation[page.sidebar] %}
       <li>
-        <a {% if item.url == page.url %}class="usa-current"{% endif %} href="{{ item.url }}">
+        <a {% if item.url == page.url %}class="usa-current"{% endif %} href="{{ item.url | relative_url }}">
           <i class="fa fa-circle" aria-hidden="true"></i>
           {{ item.title }}
         </a>
