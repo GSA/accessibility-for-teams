@@ -1,0 +1,91 @@
+product:
+  - title: Getting started
+    url: /product/getting-started/
+  - title: Accessibility basics
+    url: /product/accessibility-basics/
+  - title: Diverse users
+    url: /product/diverse-users/
+  - title: Project workflow
+    url: /product/project-workflow/
+  - title: Final review
+    url: /product/final-review/
+
+content:
+  - title: Getting started
+    url: /content-design/getting-started/
+  - title: Plain language
+    url: /content-design/plain-language/
+  - title: Reference materials
+    url: /content-design/reference-materials/
+  - title: Graphic elements
+    url: /content-design/graphic-elements/
+  - title: Scannable content
+    url: /content-design/scannable-content/
+  - title: Images
+    url: /content-design/images/
+  - title: Links
+    url: /content-design/links/
+  - title: Information architecture
+    url: /content-design/information-architecture/
+
+ux:
+  - title: Getting started
+    url: /ux/getting-started/
+  - title: Inclusive design
+    url: /ux/inclusive-design/
+  - title: Assistive technology
+    url: /ux/assistive-technology/
+  - title: Humanize accessibility
+    url: /ux/humanize-accessibility/
+  - title: Tab order
+    url: /ux/tab-order/
+  - title: Focus
+    url: /ux/focus/
+  - title: Navigation shortcuts
+    url: /ux/navigation-shortcuts/
+  - title: Forms
+    url: /ux/forms/
+  - title: Images
+    url: /ux/images/
+  - title: Touch targets
+    url: /ux/touch-targets/
+
+visual:
+  - title: Getting started
+    url: /visual-design/getting-started/
+  - title: Color and contrast
+    url: /visual-design/color-and-contrast/
+  - title: Layout and hierarchy
+    url: /visual-design/layout-and-hierarchy/
+  - title: Typography
+    url: /visual-design/typography/
+  - title: Graphics and images
+    url: /visual-design/graphics-and-images/
+  - title: Data visualizations
+    url: /visual-design/data-visualizations/
+  - title: Forms
+    url: /visual-design/forms/
+  - title: Mobile
+    url: /visual-design/mobile/
+  - title: Keyboard access
+    url: /visual-design/keyboard-access/
+  - title: Screen reader
+    url: /visual-design/screen-reader/
+
+frontend:
+  - title: Getting started
+    url: /front-end/getting-started/
+  - title: Keyboard access
+    url: /front-end/keyboard-access/
+  - title: Screen reader
+    url: /front-end/screen-reader/
+  - title: Headings
+    url: /front-end/headings/
+  - title: Page structure
+    url: /front-end/page-structure/
+  - title: Images
+    url: /front-end/images/
+  - title: Color and contrast
+    url: /front-end/color-and-contrast/
+  - title: Automated testing
+    url: /front-end/automated-testing/
