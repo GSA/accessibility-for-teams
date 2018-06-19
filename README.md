@@ -1,4 +1,4 @@
-# Role-based Accessibility Guidelines
+# Accessibility for Teams
 Practices for embedding accessibility and inclusive design into 18F teams.
 
 ## Running the site
