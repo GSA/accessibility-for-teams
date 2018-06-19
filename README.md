@@ -3,7 +3,7 @@ Practices for embedding accessibility and inclusive design into 18F teams.
 
 ## Running the site
 
-The Accessibility Playbook runs on Jekyll. To run it locally:
+The Accessibility for Teams runs on Jekyll. To run it locally:
 
 - Clone the repository.
 - Get [Jekyll](https://jekyllrb.com/) and the necessary dependencies: `bundle install`
