@@ -7,7 +7,7 @@
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
   <!--  Essential META Tags -->
-  <meta property="og:title" content="{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}">
+  <meta property="og:title" content="{% if page.title and page.title != 'Home' %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}">
   <meta property="og:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
   {% if page.image %}
     <meta property="og:image" content="{{ page.image }}">
