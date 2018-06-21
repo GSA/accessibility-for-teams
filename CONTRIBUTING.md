@@ -1,4 +1,4 @@
-## Contributing
+# Contributing
 
 Thanks for your interest in contributing to the Accessibility for Teams! We appreciate all constructive contributions, and we welcome your ideas about how to keep the Accessibility for Teams up-to-date, friendly, and accessible. You can contribute by emailing us, filing an issue, or submitting a pull request.
 
