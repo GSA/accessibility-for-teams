@@ -18,7 +18,7 @@ Each person on a team, whether you’re a manager, designer, or developer, has a
 
 We focus on the issues most likely to impact government sites. These guidelines do not provide a comprehensive list of all possible issues. Your team will need additional resources and work to conduct manual audits to conform to the standards of [Section 508](https://www.section508.gov/) (which aligns with the [W3C Web Content Accessibility Guidelines (WCAG) 2.0 Level AA](https://www.w3.org/WAI/WCAG20/quickref/)), a law that ensures all web content is accessible to anybody with a disability.
 
-This guide is maintained by the Accessibility Guild in the [Technology Transformation Services (TTS)](https://www.gsa.gov/about-us/organization/federal-acquisition-service/technology-transformation-services) at the U.S. General Service Administration (GSA).
+This guide is maintained by the Accessibility Guild in the [Technology Transformation Services (TTS)](https://www.gsa.gov/about-us/organization/federal-acquisition-service/technology-transformation-services) at the U.S. General Services Administration (GSA).
 
 ## Running the site
 
