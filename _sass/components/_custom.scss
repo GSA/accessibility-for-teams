@@ -28,6 +28,14 @@ button.usa-menu-btn,
   }
 }
 
+.usa-button {
+  background-color: darkslateblue;
+
+  &:hover {
+    background-color: darken(darkslateblue, 10%);
+  }
+}
+
 .site-footer {
   a {
     &:focus {
@@ -202,12 +210,13 @@ $article-width: 745px;
     font-size: 16px;
 
     &:hover {
-      color: $color-white;
-      background-color: $color-gray;
+      color: darkslateblue;
+      background-color: #eeebf7;
     }
 
     &.usa-current {
       border-left: none;
+      color: darkslateblue;
       padding-left: 1.5rem;
     }
   }
@@ -230,12 +239,12 @@ $article-width: 745px;
 
   .usa-current {
     .fa {
-      color: $color-primary;
+      color: darkslateblue;
     }
 
     &:hover {
       .fa {
-        color: $color-white;
+        // color: $color-white;
       }
     }
   }
