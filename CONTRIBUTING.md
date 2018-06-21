@@ -1,12 +1,17 @@
-## Welcome!
+## Contributing
 
-We’re so glad you’re thinking about contributing to a Technology Transformation Services (TTS) open source project! If you’re unsure about anything, just ask — or submit your issue or pull request anyway. The worst that can happen is we’ll politely ask you to change something. We appreciate all friendly contributions.
+Thanks for your interest in contributing to the Accessibility for Teams! We appreciate all constructive contributions, and we welcome your ideas about how to keep the Accessibility for Teams up-to-date, friendly, and accessible. You can contribute by emailing us, filing an issue, or submitting a pull request.
 
-TTS is committed to building a safe, welcoming, harassment-free culture for everyone. We expect everyone on the TTS team and everyone within TTS spaces, including contributors to our projects, to follow the [TTS Code of Conduct](https://github.com/18F/code-of-conduct/blob/master/code-of-conduct.md).
+- **Emailing us.** Whether you've got a general question about the Accessibility for Teams, or you'd just like to have a conversation outside of GitHub — whatever the reason, feel free to [email us](mailto:g-accessibility@gsa.gov).
+- **Filing an issue.** See something amiss? Please glance through the [existing issues](https://github.com/gsa/accessibility-for-teams/issues) to see if someone has already alerted us to your question or concern *before* [filing a new issue](https://github.com/gsa/accessibility-for-teams/issues/new)!
+- **Submitting a pull request.** Got a better solution in mind? Please glance through [our existing pull requests](https://github.com/gsa/accessibility-for-teams/pulls) to see if we're already working on a similar idea *before* submitting a pull request.
 
-We encourage you to read this project's CONTRIBUTING policy (you are here), its [LICENSE](LICENSE.md), and its [README](README.md).
+## Code of conduct
 
-If you have any questions or want to read more, check out the [18F Open Source Policy GitHub repository](https://github.com/18f/open-source-policy), or just [shoot us an email](mailto:g-accessibility@gsa.gov).
+To ensure a welcoming environment for our projects, our staff follows the [TTS Code of Conduct](https://github.com/18F/code-of-conduct/blob/master/code-of-conduct.md); contributors should do the same.
+
+## Open source
+This project is maintained in accordance with [18F’s Open Source Policy](https://github.com/18f/open-source-policy).
 
 ## Public domain
 
