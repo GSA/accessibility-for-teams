@@ -12,13 +12,11 @@
   <!--  Essential META Tags -->
   <meta property="og:title" content="{% if page.title and page.title != 'Home' %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}">
   <meta property="og:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-  <meta property="og:image" content="{{ site.url }}/assets/img/a11y-icon.png">
+  <meta property="og:image" content="{{ "/assets/img/a11y-icon.png" | absolute_url }}">
   <meta name="twitter:card" content="summary">
 
-  {% if site.url %}
-  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
-  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-  {% endif %}
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <meta property="og:url" content="{{ page.url  | absolute_url }}">
 
   <link rel="stylesheet" href="{{ "/assets/fonts/font-awesome.min.css" | relative_url }}">
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
