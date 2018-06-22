@@ -347,21 +347,23 @@ code {
 .home-section-about {
   font-size: $h3-font-size;
   margin-top: 4rem;
-
- ul {
-   padding-left: 1em;
- }
-
-  .fa {
-    color: darkslateblue;
-    font-size: 13px;
-    margin-right: 10px;
-    transform: translateY(-2px);
-  }
 }
 
 .list-none {
   list-style-type: none;
+  padding-left: 1em;
+
+  .fa {
+    color: darkslateblue;
+    display: table-cell;
+    font-size: 13px;
+    padding-right: 10px;
+    transform: translateY(-2px);
+  }
+
+  li span {
+    display: table-cell;
+  }
 }
 
 .home-about-heading {
