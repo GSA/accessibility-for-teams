@@ -92,12 +92,12 @@ Here are a few guidelines to follow when submitting a pull request:
 1. Fork this repo into your GitHub account. Read more about forking a repo here on GitHub:
 [https://help.github.com/articles/fork-a-repo/](https://help.github.com/articles/fork-a-repo/)
 1. Create a branch from `master` that clearly defines what you’re working on (for example, `fix-menu-bug`).
-  * [Set up the project](#project-setup).
-  * Make any necessary changes to the source code.
-  * Include any additional documentation the changes might need.
-  * Write clear, concise commit message(s).
+    * [Set up the project](#project-setup).
+    * Make any necessary changes to the source code.
+    * Include any additional documentation the changes might need.
+    * Write clear, concise commit message(s).
 1. Once you’re ready to submit a pull request, [open a pull request](https://github.com/GSA/accessibility-for-teams/pulls).
-  * If your PR is connected to an open issue, add a line in your PR's description that says `Fixes: #123`, where `#123` is the number of the issue you're fixing.
+    * If your PR is connected to an open issue, add a line in your PR's description that says `Fixes: #123`, where `#123` is the number of the issue you're fixing.
 1. Submit your pull request against the `master` branch.
 
 Once you've filed the PR:
