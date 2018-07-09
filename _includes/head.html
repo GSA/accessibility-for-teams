@@ -6,12 +6,12 @@
     <meta name="robots" content="noindex, nofollow">
   {% endunless %}
 
-  <title>{% if page.title and page.title != 'Home' %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}</title>
+  <title>{% if page.title and page.title != 'Home' %}{{ page.title | escape }} | {% endif %}{% if page.category %}{{ page.category | escape }} | {% endif %}{{ site.title | escape }}</title>
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
   <!--  Essential META Tags -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="{% if page.title and page.title != 'Home' %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}">
+  <meta property="og:title" content="{% if page.title and page.title != 'Home' %}{{ page.title | escape }} | {% endif %}{% if page.category %}{{ page.category | escape }} | {% endif %}{{ site.title | escape }}">
   <meta property="og:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
   <meta property="og:image" content="https://accessibility.digital.gov/assets/img/a11y-icon.png">
   <meta name="twitter:card" content="summary">
