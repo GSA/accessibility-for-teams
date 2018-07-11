@@ -383,6 +383,10 @@ code {
   }
 }
 
+.home-roles-note {
+  margin-bottom: 0;
+}
+
 [role="contentinfo"] {
   @include padding(2rem null);
   background-color: $color-gray-lighter;
