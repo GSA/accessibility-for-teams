@@ -27,6 +27,8 @@ content:
     url: /content-design/links/
   - title: Information architecture
     url: /content-design/information-architecture/
+  - title: Video captioning
+    url: /content-design/video-captioning
 
 ux:
   - title: Getting started
