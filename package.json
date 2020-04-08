@@ -16,7 +16,18 @@
     "url": "https://github.com/18F/accessibility-playbook/issues"
   },
   "homepage": "https://github.com/18F/accessibility-playbook#readme",
-  "dependencies": {
-    "uswds": "^2.6.0"
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^9.7.6",
+    "gulp": "^4.0.2",
+    "gulp-notify": "^3.2.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "postcss-csso": "^4.0.0",
+    "sass": "^1.26.3",
+    "uswds": "^2.6.0",
+    "uswds-gulp": "github:uswds/uswds-gulp"
   }
 }
