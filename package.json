@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/18F/accessibility-playbook#readme",
   "dependencies": {
-    "uswds": "^0.14.0"
+    "uswds": "^2.6.0"
   }
 }
