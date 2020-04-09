@@ -53,9 +53,6 @@ const JS_DEST = './assets/js';
 // Compiled CSS destination
 const CSS_DEST = './assets/stylesheets/lib/uswds';
 
-// Site Sass
-const USDS_SASS_SRC = '/assets/stylesheets/';
-
 /*
 ----------------------------------------
 TASKS
