@@ -312,7 +312,6 @@ code {
 
   .usa-navbar {
     height: auto;
-    margin-top: units(2.5);
     padding-top: units(2.5);
     padding-bottom: units(2.5);
 
@@ -414,6 +413,7 @@ a
   font-weight: $font-bold;
   font-size: size('body', 'lg');
   -webkit-font-smoothing: antialiased;
+  line-height: line-height('body', 4);
   margin-bottom: 0;
   margin-top: units(1);
 
@@ -525,6 +525,7 @@ a
     font-size: size('body', 'lg');
     margin-bottom: 0;
     margin-top: units(1.5);
+    padding: 0 units(1);
   }
 
   .fa {
