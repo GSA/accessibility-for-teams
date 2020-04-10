@@ -3,39 +3,43 @@ layout: default
 ---
 
   <!-- Sidebar navigation -->
-  <aside class="usa-width-one-fourth sidenav sticky">
-    <ul class="usa-sidenav-list">
-    {% for item in site.data.navigation[page.sidebar] %}
-      <li>
-        <a {% if item.url == page.url %}class="usa-current"{% endif %} href="{{ item.url | relative_url }}">
-          <i class="fa fa-circle" aria-hidden="true"></i>
-          {{ item.title }}
-        </a>
-      </li>
-    {% endfor %}
-    </ul>
-  </aside>
-
-  <article class="usa-width-three-fourths page-body article-body">
-    <header class="post-header">
-      <h1 class="page-title">{{ page.title | escape }}</h1>
-    </header>
-
-    {% if page.question %}
-    <h2>{{ page.question }}</h2>
-    {% endif %}
-
-    {% if page.personas %}
-    <p class="personas-first"><strong>Why it’s important:</strong> {{ page.personas.first }}</p>
-    {% if page.personas.size > 1 %}
-    <details class="personas-more">
-      <summary>View more</summary>
-      {% for persona in page.personas offset:1 %}
-        <p>{{ persona }}</p>
+  <div class="grid-row">
+    <aside class="grid-col-12 tablet:grid-col-4 sidenav sticky">
+      <ul class="usa-sidenav">
+      {% for item in site.data.navigation[page.sidebar] %}
+        <li class="usa-sidenav__item">
+          <a {% if item.url == page.url %}class="usa-current"{% endif %} href="{{ item.url | relative_url }}">
+            <i class="fa fa-circle" aria-hidden="true"></i>
+            {{ item.title }}
+          </a>
+        </li>
       {% endfor %}
-    </details>
-    {% endif %}
-    {% endif %}
+      </ul>
+    </aside>
 
-    {{ content }}
-  </article>
+    <article class="grid-col-12 tablet:grid-col-8 page-body article-body">
+      <header class="post-header">
+        <h1 class="page-title">{{ page.title | escape }}</h1>
+      </header>
+
+      {% if page.question %}
+      <h2>{{ page.question }}</h2>
+      {% endif %}
+
+      {% if page.personas %}
+      <p class="personas-first"><strong>Why it’s important:</strong> {{ page.personas.first }}</p>
+      {% if page.personas.size > 1 %}
+      <details class="personas-more">
+        <summary>View more</summary>
+        {% for persona in page.personas offset:1 %}
+          <p>{{ persona }}</p>
+        {% endfor %}
+      </details>
+      {% endif %}
+      {% endif %}
+
+      <div class="usa-prose">
+        {{ content }}
+      </div>
+    </article>
+  </div>

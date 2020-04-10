@@ -7,8 +7,10 @@
 
     {% include header.html %}
 
-    <main class="main-content{% unless page.title == 'Home' %} usa-grid {% endunless %}" id="main-content" aria-label="Content">
-      {{ content }}
+    <main class="main-content{% unless page.title == 'Home' %} grid-container {% endunless %}" id="main-content" aria-label="Content">
+      <div>
+        {{ content }}
+      </div>
     </main>
 
     {% include footer.html %}

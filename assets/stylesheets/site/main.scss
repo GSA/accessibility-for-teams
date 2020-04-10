@@ -1,0 +1,36 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+// // Define defaults for each variable.
+
+$font-sans:   -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-serif:  -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+// $image-path:  '../node_modules/uswds/src/img';
+$image-path:  '../assets/img/lib/uswds';
+
+$nav-width:   888px;
+
+@import 'components/variables';
+
+// Settings
+// -------------------------------------
+@import '../lib/uswds-sass/settings/settings-general';
+@import '../lib/uswds-sass/settings/settings-typography';
+@import '../lib/uswds-sass/settings/settings-color';
+@import '../lib/uswds-sass/settings/settings-spacing';
+@import '../lib/uswds-sass/settings/settings-utilities';
+@import '../lib/uswds-sass/settings/settings-components';
+
+// Tools
+// -------------------------------------
+@import '../lib/uswds-sass/core/functions';
+@import '../lib/uswds-sass/core/system-tokens';
+@import '../lib/uswds-sass/core/variables';
+@import '../lib/uswds-sass/core/properties';
+@import '../lib/uswds-sass/core/mixins/all';
+
+@import '../lib/uswds/styles.css';
+@import '../lib/uswds-theme/uswds-theme-custom-styles';
+@import 'components/custom';

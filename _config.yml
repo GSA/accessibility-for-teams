@@ -3,6 +3,11 @@ description: Guidelines to help teams create accessible products and services
 imagepath: "/assets/img/lib/uswds/"
 google_analytics: 'UA-121201150-1'
 
+# Assets settings
+sass:
+  sass_dir: assets/stylesheets/site/
+  style: compressed
+
 # Build settings
 markdown: kramdown
 plugins:
@@ -11,3 +16,4 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
+
