@@ -4,7 +4,7 @@ imagepath: "/assets/img/lib/uswds/"
 google_analytics: 'UA-121201150-1'
 
 #TO UPDATE BEFORE MERGE/LAUNCH:
-url: https://federalist-ed9ac7ce-8870-4699-95f8-e85f8b3c15b8.app.cloud.gov/preview/gsa/accessibility-for-teams/sitemap/
+url: https://federalist-ed9ac7ce-8870-4699-95f8-e85f8b3c15b8.app.cloud.gov
 
 # Assets settings
 sass:
