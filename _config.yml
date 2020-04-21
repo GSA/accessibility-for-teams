@@ -2,6 +2,7 @@ title: Accessibility for Teams
 description: Guidelines to help teams create accessible products and services
 imagepath: "/assets/img/lib/uswds/"
 google_analytics: 'UA-121201150-1'
+searchgov_affiliate: a11y4teams
 
 # URL is for sitemap - uses the prod address always.
 url: https://accessibility.digital.gov
