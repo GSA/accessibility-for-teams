@@ -1,0 +1,11 @@
+<form accept-charset="UTF-8" action="https://search.usa.gov/search" class="usa-search usa-search--small" id="search_form" method="get">
+  <input name="utf8" type="hidden" value="&#x2713;" />
+  <input type="hidden" name="affiliate" id="affiliate" value="a11y4teams" />
+  <div role="search">
+    <label class="usa-sr-only" for="{{ include.id }}">Search</label>
+    <input id="{{ include.id }}" class="usa-input usagov-search-autocomplete" name="query" type="search" autocomplete="off"/>
+    <button class="usa-button" type="submit" name="commit">
+      <span class="usa-sr-only">Search</span>
+    </button>
+  </div>
+</form>
