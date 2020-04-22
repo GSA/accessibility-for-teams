@@ -48,13 +48,16 @@
   <div class="usa-navbar">
     <div class="usa-logo maxw-none" id="logo">
       {% if page.title == 'Home' %}
-        <h1 class="usa-logo__text">{{ site.title }}</h1>
-        <p class="home-heading-subtitle">A ‘quick-start’ guide for embedding accessibility and inclusive design practices into your team’s workflow</p>
+        <div>
+          <h1 class="usa-logo__text">{{ site.title }}</h1>
+          <p class="home-heading-subtitle">A ‘quick-start’ guide for embedding accessibility and inclusive design practices into your team’s workflow</p>
+        </div>
         {% else %}
           <em class="usa-logo__text">
             <a href="{{ site.baseurl }}/" accesskey="1" title="Home" aria-label="Home">{{ site.title }}</a>
           </em>
       {% endif %}
+      {% include search-form.html id="query" %}
     </div>
     <button class="usa-menu-btn">Menu</button>
   </div>
@@ -64,6 +67,7 @@
       <button class="usa-nav__close">
         <img src="{{ site.baseurl }}{{ site.imagepath }}close.svg" alt="close">
       </button>
+      {% include search-form.html id="query-mobile" %}
       <ul class="usa-nav__primary usa-accordion">
         <li class="usa-nav__primary-item">
           <a class="usa-nav__link {% if page.permalink contains 'product' %}usa-page-current{% endif %}" href="{{ site.baseurl }}/product/getting-started/">

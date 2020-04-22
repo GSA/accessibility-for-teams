@@ -41,6 +41,15 @@ button.usa-menu-btn,
   }
 }
 
+
+.usa-search .usa-button {
+  background-color: darken(darkslateblue, 20%);
+
+  &:hover {
+    background-color: darken(darkslateblue, 30%);
+  }
+}
+
 .site-footer {
 
   a {
@@ -165,7 +174,14 @@ button.usa-menu-btn,
   }
 }
 
+.usa-header--extended .usa-navbar {
+  @include at-media($nav-width) {
+    overflow: hidden;
+  }
+}
+
 .usa-header--extended .usa-nav {
+
   @include at-media($nav-width) {
     border-bottom: 1px solid color('base-lighter');
   }
@@ -356,8 +372,50 @@ a
   }
 }
 
+.page-home .usa-header--extended .usa-logo {
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  @include at-media($nav-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .usa-search {
+    display: block;
+    margin-top: units(3);
+
+    @include at-media($nav-width) {
+      margin-top: units(-0.5);  
+    }
+  }
+}
+
 .usa-header--extended .usa-logo {
   max-width: none;
+
+  @include at-media($nav-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.usa-header--extended .usa-search {
+  display: none;
+
+  @include at-media($nav-width) {
+    display: block;
+  }
+}
+
+.usa-header--extended .usa-nav .usa-search {
+  display: block;
+
+  @include at-media($nav-width) {
+    display: none;
+  }
 }
 
 .home-list {
