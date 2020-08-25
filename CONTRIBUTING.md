@@ -98,14 +98,14 @@ Here are a few guidelines to follow when submitting a pull request:
     * Write clear, concise commit message(s).
 1. Once you’re ready to submit a pull request, [open a pull request](https://github.com/GSA/accessibility-for-teams/pulls).
     * If your PR is connected to an open issue, add a line in your PR's description that says `Fixes: #123`, where `#123` is the number of the issue you're fixing.
-1. Submit your pull request against the `master` branch.
+1. Submit your pull request against the `main` branch.
 
 Once you've filed the PR:
 
 * One or more maintainers will use GitHub's review feature to review your PR.
 * If the maintainer asks for any changes, edit your changes, push, and ask for another review.
 * If the maintainer decides to pass on your PR, they will thank you for the contribution and explain why they won't be accepting the changes. That's OK! We appreciate you taking the time to do it and don't take that lightly. 💚
-* If your PR gets accepted, it will be approved and merged into the `master` branch. Your contribution will be published to the site.
+* If your PR gets accepted, it will be approved and merged into the `main` branch. Your contribution will be published to the site.
 
 ## Open source
 This project is maintained in accordance with [18F’s Open Source Policy](https://github.com/18f/open-source-policy).
