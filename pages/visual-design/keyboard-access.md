@@ -27,6 +27,7 @@ Make sure that no content gets focused offscreen or is hidden from view.
 - [2.1.2 No Keyboard Trap](https://www.w3.org/WAI/WCAG20/quickref/#keyboard-operation-trapping)
 - [2.4.3 Focus Order\| WCAG 2.0](https://www.w3.org/WAI/WCAG20/quickref/#navigation-mechanisms-focus-order)
 - [2.4.7 Focus Visible](https://www.w3.org/WAI/WCAG20/quickref/#navigation-mechanisms-focus-visible)
+- [spacebar counter](https://spacebarcounter.org)
 
 <a class="usa-button button-next" href="{{ site.baseurl }}/visual-design/screen-reader/">
   Next <i class="fa fa-chevron-right" aria-hidden="true"></i>
