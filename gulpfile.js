@@ -11,8 +11,7 @@ USWDS SASS GULPFILE
 ----------------------------------------
 */
 
-const autoprefixer = require("autoprefixer");
-const autoprefixerOptions = require("./node_modules/uswds-gulp/config/browsers");
+/*const autoprefixer = require("autoprefixer");
 const csso = require("postcss-csso");
 const gulp = require("gulp");
 const pkg = require("./node_modules/uswds/package.json");
@@ -20,9 +19,14 @@ const postcss = require("gulp-postcss");
 const replace = require("gulp-replace");
 const sass = require("gulp-sass");
 const sourcemaps = require("gulp-sourcemaps");
-const uswds = require("./node_modules/uswds-gulp/config/uswds");
+const uswds = require("./node_modules/uswds-gulp/config/uswds");*/
 
-sass.compiler = require("sass");
+
+
+/*sass.compiler = require("sass");*/
+const gulp = require("gulp");
+const uswds = require("@uswds/compile");
+
 
 /*
 ----------------------------------------
@@ -36,22 +40,29 @@ PATHS
 */
 
 // Project Sass source directory
-const PROJECT_SASS_SRC = './assets/stylesheets/lib/uswds-theme';
+/*const PROJECT_SASS_SRC = './assets/stylesheets/lib/uswds-theme';*/
+uswds.paths.dist.theme = './assets/stylesheets/lib/uswds-theme';
 
 // Project Sass source directory
-const PROJECT_USWDS_SASS_SRC = './assets/stylesheets/lib/uswds-sass';
+/*const PROJECT_USWDS_SASS_SRC = './assets/stylesheets/lib/uswds-sass';*/
+uswds.paths.dist.theme = './assets/stylesheets/lib/uswds-sass';
 
 // Images destination
-const IMG_DEST = './assets/img/lib/uswds';
+/*const IMG_DEST = './assets/img/lib/uswds';*/
+uswds.paths.dist.img ='./assets/img/lib/uswds';
 
 // Fonts destination
-const FONTS_DEST = './assets/fonts';
+/*const FONTS_DEST = './assets/fonts';*/
+uswds.paths.dist.fonts = './assets/fonts';
 
 // Javascript destination
-const JS_DEST = './assets/js';
+/*const JS_DEST = './assets/js';*/
+uswds.paths.dist.js = './assets/js';
+
 
 // Compiled CSS destination
-const CSS_DEST = './assets/stylesheets/lib/uswds';
+/*const CSS_DEST = './assets/stylesheets/lib/uswds';*/
+uswds.paths.dist.css = './assets/stylesheets/lib/uswds';
 
 /*
 ----------------------------------------
@@ -59,40 +70,26 @@ TASKS
 ----------------------------------------
 */
 
-gulp.task("copy-uswds-setup", () => {
-  return gulp
-    .src(`${uswds}/scss/theme/**/**`)
-    .pipe(gulp.dest(`${PROJECT_SASS_SRC}`));
-});
+
 
 gulp.task('copy-uswds-core', () => {
   return gulp.src(`${uswds}/scss/core/**/**`)
-  .pipe(gulp.dest(`${PROJECT_USWDS_SASS_SRC}/core`));
+  .pipe(gulp.dest(`${uswds.paths.dist.theme}/core`));
 });
 
 gulp.task('copy-uswds-lib', () => {
   return gulp.src(`${uswds}/scss/lib/**/**`)
-  .pipe(gulp.dest(`${PROJECT_USWDS_SASS_SRC}/lib`));
+  .pipe(gulp.dest(`${uswds.paths.dist.theme}/lib`));
 });
 
 gulp.task('copy-uswds-settings', () => {
   return gulp.src(`${uswds}/scss/settings/**/**`)
-  .pipe(gulp.dest(`${PROJECT_USWDS_SASS_SRC}/settings`));
+  .pipe(gulp.dest(`${uswds.paths.dist.theme}/settings`));
 });
 
-gulp.task("copy-uswds-fonts", () => {
-  return gulp.src(`${uswds}/fonts/**/**`).pipe(gulp.dest(`${FONTS_DEST}`));
-});
 
-gulp.task("copy-uswds-images", () => {
-  return gulp.src(`${uswds}/img/**/**`).pipe(gulp.dest(`${IMG_DEST}`));
-});
 
-gulp.task("copy-uswds-js", () => {
-  return gulp.src(`${uswds}/js/**/**`).pipe(gulp.dest(`${JS_DEST}`));
-});
-
-gulp.task("build-sass", function(done) {
+/*gulp.task("build-sass", function(done) {
   var plugins = [
     // Autoprefix
     autoprefixer(autoprefixerOptions),
@@ -119,9 +116,9 @@ gulp.task("build-sass", function(done) {
       //.pipe(gulp.dest(`${SITE_CSS_DEST}`))
       .pipe(gulp.dest(`${CSS_DEST}`))
   );
-});
+});*/
 
-gulp.task(
+/*gulp.task(
   "init",
   gulp.series(
     "copy-uswds-setup",
@@ -133,9 +130,9 @@ gulp.task(
     "copy-uswds-js",
     "build-sass"
   )
-);
+);*/
 
-gulp.task('update', gulp.series(
+/*gulp.task('update', gulp.series(
   'copy-uswds-core',
   'copy-uswds-lib',
   'copy-uswds-settings',
@@ -143,12 +140,32 @@ gulp.task('update', gulp.series(
   'copy-uswds-images',
   'copy-uswds-js',
   'build-sass',
-));
+));*/
 
-gulp.task("watch-sass", function() {
-  gulp.watch(`${PROJECT_SASS_SRC}/**/*.scss`, gulp.series("build-sass"));
-});
 
-gulp.task("watch", gulp.series("build-sass", "watch-sass"));
+exports.init =gulp.series(
+  'copy-uswds-core',
+  'copy-uswds-lib',
+  'copy-uswds-settings',
+);
 
-gulp.task("default", gulp.series("watch"));
+exports.update = gulp.series(
+  'copy-uswds-core',
+  'copy-uswds-lib',
+  'copy-uswds-settings',
+
+);
+
+exports.compile = uswds.compile;
+exports.compileIcons = uswds.compileIcons;
+exports.compileSass = uswds.compileSass;
+exports.copyAll = uswds.copyAll;
+exports.copyAssets = uswds.copyAssets;
+exports.copyFonts = uswds.copyFonts;
+exports.copyImages = uswds.copyImages;
+exports.copyJS = uswds.copyJS;
+exports.copyTheme = uswds.copyTheme;
+exports.default = uswds.watch;
+exports.init = uswds.init;
+exports.updateUswds = uswds.updateUswds;
+exports.watch = uswds.watch;
