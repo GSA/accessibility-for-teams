@@ -89,7 +89,6 @@ exports.update = gulp.series(
 exports.compile = uswds.compile;
 exports.compileIcons = uswds.compileIcons;
 exports.compileSass = uswds.compileSass;
-exports.copyAll = uswds.copyAll;
 exports.copyAssets = uswds.copyAssets;
 exports.copyFonts = uswds.copyFonts;
 exports.copyImages = uswds.copyImages;
