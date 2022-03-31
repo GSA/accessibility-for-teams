@@ -33,9 +33,6 @@ PATHS
 // Project Sass source directory
 uswds.paths.dist.theme = './assets/stylesheets/lib/uswds-theme';
 
-// Project Sass source directory
-uswds.paths.dist.theme = './assets/stylesheets/lib/uswds-sass';
-
 // Images destination
 uswds.paths.dist.img ='./assets/img/lib/uswds';
 
@@ -58,17 +55,17 @@ TASKS
 
 
 gulp.task('copy-uswds-core', () => {
-  return gulp.src(`${uswds}/scss/core/**/**`)
+  return gulp.src(`node_modules/uswds/dist/scss/core/**/**`)
   .pipe(gulp.dest(`${uswds.paths.dist.theme}/core`));
 });
 
 gulp.task('copy-uswds-lib', () => {
-  return gulp.src(`${uswds}/scss/lib/**/**`)
+  return gulp.src(`node_modules/uswds/dist/scss/lib/**/**`)
   .pipe(gulp.dest(`${uswds.paths.dist.theme}/lib`));
 });
 
 gulp.task('copy-uswds-settings', () => {
-  return gulp.src(`${uswds}/scss/settings/**/**`)
+  return gulp.src(`node_modules/uswds/dist/scss/settings/**/**`)
   .pipe(gulp.dest(`${uswds.paths.dist.theme}/settings`));
 });
 
