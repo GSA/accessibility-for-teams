@@ -387,7 +387,7 @@ a
     margin-top: units(3);
 
     @include at-media($nav-width) {
-      margin-top: units(-0.5);  
+      margin-top: units(-0.5);
     }
   }
 }
@@ -446,6 +446,7 @@ a
 }
 
 .list-none {
+  display: table-row;
   list-style-type: none;
   padding-left: 1em;
 
