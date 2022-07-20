@@ -383,7 +383,7 @@ a
   }
 
   .usa-search {
-    display: block;
+    // display: block;
     margin-top: units(3);
 
     @include at-media($nav-width) {
@@ -403,10 +403,10 @@ a
 }
 
 .usa-header--extended .usa-search {
-  display: none;
+  // display: none;
 
   @include at-media($nav-width) {
-    display: block;
+    // display: block;
   }
 }
 
@@ -486,8 +486,8 @@ a
 }
 
 [role="contentinfo"] {
-  padding: units(2.5) 0;
-  background-color: $color-gray-lighter;
+  // padding: units(2.5) 0;
+  // background-color: $color-gray-lighter;
 }
 
 .button-question {

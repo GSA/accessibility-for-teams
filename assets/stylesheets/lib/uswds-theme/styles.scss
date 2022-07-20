@@ -53,6 +53,8 @@
 // @import 'packages/usa-table';
 // @import 'packages/usa-tag';
 
+@import "usa-search/src/styles";
+
 // or package sets...
 // @import 'packages/uswds-components';
 // @import 'packages/uswds-utilities';
@@ -60,7 +62,8 @@
 // -------------------------------------
 // ...or import the complete USWDS kit
 
-// @import "uswds";
+@import "uswds";
+// @use "uswds-core" as *;
 
 // -------------------------------------
 // Import theme custom styles

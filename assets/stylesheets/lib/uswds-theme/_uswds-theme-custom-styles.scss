@@ -29,4 +29,11 @@ i.e.
   margin: 1.5em 0;
 }
 
+.usa-prose > p {
+  margin-top: 1.5rem;
+}
 
+
+.usa-search [role=search] {
+  display: flex;
+}
