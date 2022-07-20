@@ -14,6 +14,8 @@ Based on @uswds/compile
 const gulp = require("gulp");
 const uswds = require("@uswds/compile");
 
+uswds.settings.version = 3;
+
 /*
 ----------------------------------------
 PATHS
