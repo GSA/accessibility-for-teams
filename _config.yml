@@ -9,7 +9,7 @@ url: https://accessibility.digital.gov
 
 # Assets settings
 sass:
-  sass_dir: assets/stylesheets/site/
+  sass_dir: assets/stylesheets/site/ # update this for migration?
   style: compressed
 
 # Build settings
@@ -21,4 +21,3 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - node_modules
-

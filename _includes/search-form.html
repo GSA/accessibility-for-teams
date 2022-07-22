@@ -1,20 +1,8 @@
-<!-- <form accept-charset="UTF-8" action="https://search.usa.gov/search" class="usa-search usa-search--small" id="search_form" method="get">
-  <input name="utf8" type="hidden" value="&#x2713;" />
-  <input type="hidden" name="affiliate" id="affiliate" value="a11y4teams" />
-  <div role="search">
-    <label class="usa-sr-only" for="{{ include.id }}">Search</label>
-    <input id="{{ include.id }}" class="usa-input usagov-search-autocomplete" name="query" type="search" autocomplete="off"/>
-    <button class="usa-button" type="submit" name="commit">
-      <span class="usa-sr-only">Search</span>
-    </button>
-  </div>
-</form> -->
-
-<section aria-label="Small search component">
+<section>
   <form id="search_form" class="usa-search usa-search--small" role="search" accept-charset="UTF-8" action="https://search.usa.gov/search" method="get">
     <input name="utf8" type="hidden" value="&#x2713;" />
     <input type="hidden" name="affiliate" id="affiliate" value="a11y4teams" />
-    <label class="usa-sr-only" for="search-field-en-small" for="{{ include.id }}">Search</label>
+    <label class="usa-sr-only" for="query" for="{{ include.id }}">Search</label>
     <input
       class="usa-input"
       id="{{ include.id }}"
