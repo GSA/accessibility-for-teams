@@ -33,6 +33,19 @@ button.usa-menu-btn,
   }
 }
 
+@media (min-width: 40em) {
+  .usa-banner__button::after {
+    -webkit-mask: url("/assets/img/lib/uswds/usa-icons/expand_more.svg") no-repeat center / contain;
+  }
+}
+
+@media (min-width: 40em) {
+  .usa-banner__button[aria-expanded=true]::after {
+    -webkit-mask: url("/assets/img/lib/uswds/usa-icons/expand_less.svg") no-repeat center / contain;
+  }
+}
+
+
 .usa-button.usa-button {
   background-color: darkslateblue;
 
