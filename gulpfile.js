@@ -31,19 +31,19 @@ PATHS
 const PROJECT_USWDS_SASS_SRC = "./assets/stylesheets/lib/uswds-sass";
 
 // Project Sass theme directory
-uswds.paths.dist.theme = "./assets/stylesheets/lib/uswds-theme";
+uswds.paths.dist.theme = "./assets/stylesheets/site";
 
 // Images destination
 uswds.paths.dist.img = "./assets/img/lib/uswds";
 
 // Fonts destination
-uswds.paths.dist.fonts = "./assets/fonts";
+uswds.paths.dist.fonts = "./assets/fonts/lib/uswds";
 
 // Javascript destination
-uswds.paths.dist.js = "./assets/js";
+uswds.paths.dist.js = "./assets/js/lib/uswds";
 
 // Compiled CSS destination
-uswds.paths.dist.css = "./assets/stylesheets/lib/uswds";
+uswds.paths.dist.css = "./assets/stylesheets/css";
 
 /*
 ----------------------------------------
@@ -74,6 +74,7 @@ exports.copyUSWDSSettings = () => {
 exports.copyFonts = uswds.copyFonts;
 exports.copyImages = uswds.copyImages;
 exports.copyJS = uswds.copyJS;
+exports.copyAssets = uswds.copyAssets;
 exports.compileSass = uswds.compileSass;
 exports.watch = uswds.watch;
 exports.default = uswds.watch;

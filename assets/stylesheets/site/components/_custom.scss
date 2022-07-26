@@ -1,27 +1,15 @@
+@use "variables" as *;
+@use "uswds-core" as *;
+
+$nav-width: 64em;
+
 body {
-  background-color: color('base-lightest');
+  background-color: #f0f0f0;
 }
 
 a {
   color: color('primary');
 }
-
-
-// Focus
-
-// a:focus,
-// .usa-footer-return-to-top a:focus {
-//   background-color: $color-gold;
-//   color: $color-base !important;
-// }
-
-// .home-roles-list,
-// .usa-nav-primary,
-// .usa-sidenav-list {
-//   a {
-//     background-color: transparent;
-//   }
-// }
 
 a,
 button,
@@ -32,19 +20,6 @@ button.usa-menu-btn,
     outline-offset: 0;
   }
 }
-
-@media (min-width: 40em) {
-  .usa-banner__button::after {
-    -webkit-mask: url("/assets/img/lib/uswds/usa-icons/expand_more.svg") no-repeat center / contain;
-  }
-}
-
-@media (min-width: 40em) {
-  .usa-banner__button[aria-expanded=true]::after {
-    -webkit-mask: url("/assets/img/lib/uswds/usa-icons/expand_less.svg") no-repeat center / contain;
-  }
-}
-
 
 .usa-button.usa-button {
   background-color: darkslateblue;
@@ -88,14 +63,14 @@ button.usa-menu-btn,
   background-color: darkslateblue; // could also use $primary-darkest or $gray-dark
   z-index: auto;
 
-  @include at-media($nav-width) {
+  @include at-media(desktop) {
     border-bottom-color: color('base-lighter');
   }
 }
 
 // Sticky footer
 .page-primary {
-  @include at-media($medium-screen) {
+  @include at-media(tablet) {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -122,12 +97,12 @@ button.usa-menu-btn,
   margin-bottom: units(8);
   margin-top: units(2);
 
-  @include at-media($nav-width) {
+  @include at-media(desktop) {
     margin-top: units(6);
   }
 }
 
-@include at-media($nav-width) {
+@include at-media(desktop) {
   .usa-header--basic {
     .usa-navbar {
       width: 350px;
@@ -147,10 +122,8 @@ button.usa-menu-btn,
   }
 }
 
-
-
 // [role="navigation"] {
-//   @include at-media($nav-width) {
+//   @include at-media(desktop) {
 //     background-color: transparent;
 //   }
 // }
@@ -161,18 +134,18 @@ button.usa-menu-btn,
 }
 
 .usa-nav__primary > li > a {
-  @include at-media($nav-width) {
+  @include at-media(desktop) {
     // color: #cad9ef;
     padding-bottom: 22px !important;
   }
 
   &.usa-page-current {
-    @include at-media($nav-width) {
+    @include at-media(desktop) {
       // color: $color-white;
     }
 
     > span {
-      @include at-media($nav-width) {
+      @include at-media(desktop) {
         border-bottom: 7px solid darkslateblue;
         color: $color-base;
         padding-bottom: units(1.5);
@@ -181,28 +154,27 @@ button.usa-menu-btn,
   }
 
   &:hover {
-    @include at-media($nav-width) {
+    @include at-media(desktop) {
       color: darkslateblue;
     }
   }
 }
 
 .usa-header--extended .usa-navbar {
-  @include at-media($nav-width) {
+  @include at-media(desktop) {
     overflow: hidden;
   }
 }
 
 .usa-header--extended .usa-nav {
-
-  @include at-media($nav-width) {
+  @include at-media(desktop) {
     border-bottom: 1px solid color('base-lighter');
   }
 }
 
 .usa-header--extended {
   .usa-nav__link:hover {
-    @include at-media($nav-width) {
+    @include at-media(desktop) {
       color: darkslateblue;
 
       > span {
@@ -241,7 +213,7 @@ $article-width: 745px;
 .sidenav {
   margin-bottom: units(2);
 
-  @include at-media($small-screen) {
+  @include at-media(mobile-lg) {
     margin-right: 30px;
     width: 227px;
   }
@@ -250,7 +222,7 @@ $article-width: 745px;
 .article-body {
   width: 100%;
 
-  @include at-media($article-width) {
+  @media (min-width: $article-width) {
     width: calc(100% - 257px);
   }
 }
@@ -267,9 +239,18 @@ $article-width: 745px;
   a {
     font-size: 16px;
 
+    &:not(.usa-button):not(.usa-current):hover {
+      color: #483d8b;
+    }
+
     &:hover {
       color: darkslateblue;
       background-color: #eeebf7;
+
+      &:not(.usa-button) {
+        color: darkslateblue;
+        background-color: #eeebf7;
+      }
     }
 
     &.usa-current {
@@ -344,7 +325,7 @@ code {
     padding-top: units(2.5);
     padding-bottom: units(2.5);
 
-    @include at-media($nav-width) {
+    @include at-media(desktop) {
       margin-top: 0;
     }
   }
@@ -357,7 +338,7 @@ code {
     .usa-logo {
       margin-left: units(2);
 
-      @include at-media($small-screen) {
+      @include at-media(mobile-lg) {
         top: 47%;
         transform: translateY(-50%);
         position: relative;
@@ -371,7 +352,7 @@ code {
     font-style: normal;
     -webkit-font-smoothing: antialiased;
 
-    @include at-media($medium-screen) {
+    @include at-media(tablet) {
       font-size: size('body', '3xl');
     }
   }
@@ -390,16 +371,16 @@ a
   flex-direction: column;
   justify-content: flex-start;
 
-  @include at-media($nav-width) {
+  @include at-media(desktop) {
     flex-direction: row;
     justify-content: space-between;
   }
 
   .usa-search {
-    // display: block;
+    display: block;
     margin-top: units(3);
 
-    @include at-media($nav-width) {
+    @include at-media(desktop) {
       margin-top: units(-0.5);
     }
   }
@@ -408,7 +389,15 @@ a
 .usa-header--extended .usa-logo {
   max-width: none;
 
-  @include at-media($nav-width) {
+  // @include at-media(desktop) {
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: space-between;
+  // }
+}
+
+@media (min-width: $nav-width) {
+  .usa-header--extended .usa-logo {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -416,17 +405,21 @@ a
 }
 
 .usa-header--extended .usa-search {
-  // display: none;
+  display: none;
+}
 
-  @include at-media($nav-width) {
-    // display: block;
+@media (min-width: $nav-width) {
+  .usa-header--extended .usa-search {
+    display: block;
   }
 }
 
 .usa-header--extended .usa-nav .usa-search {
   display: block;
+}
 
-  @include at-media($nav-width) {
+@media (min-width: $nav-width) {
+  .usa-header--extended .usa-nav .usa-search {
     display: none;
   }
 }
@@ -489,7 +482,7 @@ a
   margin-bottom: 0;
   margin-top: units(1);
 
-  @include at-media($nav-width) {
+  @include at-media(desktop) {
     max-width: 550px;
   }
 }
@@ -500,7 +493,7 @@ a
 
 [role="contentinfo"] {
   // padding: units(2.5) 0;
-  // background-color: $color-gray-lighter;
+  background-color: $color-gray-lighter;
 }
 
 .button-question {
@@ -514,7 +507,7 @@ a
 }
 
 .button-skip {
-  @include at-media($nav-width) {
+  @include at-media(desktop) {
     float: right;
   }
 }
@@ -524,7 +517,7 @@ a
   margin-left: 4px;
 }
 
-@include at-media($large-screen) {
+@include at-media(desktop-lg) {
   .sticky {
     position: -webkit-sticky;
     position: sticky;
@@ -550,7 +543,7 @@ a
     margin-bottom: 18px;
     width: 47%;
 
-    @include at-media($medium-screen) {
+    @include at-media(tablet) {
       margin-bottom: 0;
       width: 18%;
     }
@@ -564,7 +557,7 @@ a
     margin-right: 14px;
   }
 
-  @include at-media($medium-screen) {
+  @include at-media(tablet) {
     li:not(:last-child) {
       margin-right: 14px;
     }
@@ -664,7 +657,7 @@ a
   display: inline-block;
   font-size: size('body', '3xs');
 
-  @include at-media($medium-screen) {
+  @include at-media(tablet) {
     margin-top: -4px;
   }
 
@@ -672,12 +665,12 @@ a
     margin-bottom: 5px;
 
     &:first-of-type {
-      @include at-media($medium-screen) {
+      @include at-media(tablet) {
         margin-bottom: 3px;
       }
     }
 
-    @include at-media($medium-screen) {
+    @include at-media(tablet) {
       margin-bottom: 0;
     }
   }
@@ -690,7 +683,7 @@ a
 .footer-buttons {
   margin-top: 1em;
 
-  @include at-media($medium-screen) {
+  @include at-media(tablet) {
     float: right;
     margin-top: 6px;
   }
@@ -705,7 +698,7 @@ a
   margin-bottom: units(1.5);
   margin-right: units(2.5);
 
-  @include at-media($medium-screen) {
+  @include at-media(tablet) {
     float: left;
     margin-bottom: 0;
   }
@@ -779,4 +772,13 @@ summary {
   summary {
     display: none;
   }
+}
+
+.usa-prose > h2,
+.usa-prose > h3,
+.usa-prose > h4,
+.usa-prose > h5,
+.usa-prose > h6 {
+  font-family: family(sans);
+  margin: 1.5em 0;
 }
