@@ -21,6 +21,16 @@
   $utilities-use-important: true,
  );
 
-@forward "uswds";
+@forward "uswds-global";
+@forward "uswds-utilities";
+@forward "usa-accordion";
+@forward "usa-banner";
+@forward "usa-button";
+@forward "usa-header";
+@forward "usa-identifier";
+@forward "usa-prose";
+@forward "usa-search";
+@forward "usa-sidenav";
+
+// @forward "uswds";
 @forward 'custom-theme';
-// @forward 'components/custom';

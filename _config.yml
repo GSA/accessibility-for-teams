@@ -9,7 +9,7 @@ url: https://accessibility.digital.gov
 
 # Assets settings
 sass:
-  sass_dir: assets/stylesheets/ # update this for migration?
+  sass_dir: assets/stylesheets/site # update this for migration?
   style: compressed
 
 # Build settings
