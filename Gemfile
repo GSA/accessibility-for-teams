@@ -24,3 +24,5 @@ group :jekyll_plugins do
 end
 
 gem "ffi", "~> 1.13"
+
+gem "webrick", "~> 1.7"

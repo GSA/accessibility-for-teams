@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "jekyll serve"
+    "start": "bundle exec jekyll serve --host localhost"
   },
   "repository": {
     "type": "git",
