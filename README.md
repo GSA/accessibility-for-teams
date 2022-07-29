@@ -26,38 +26,24 @@ The Accessibility for Teams runs on Jekyll. To run it locally:
 
 - Clone the repository.
 - Get [Jekyll](https://jekyllrb.com/) and the necessary dependencies: `bundle install`
-- Run the web server with `jekyll serve`
+- Run the web server with `npm run start`
 - Visit the local site at http://localhost:4000
 
 
 ### Updating USWDS to a later version.
 
-There are a couple ways to update the USWDS:
+USWDS is updated to `3` uses SASS module syntax for USWDS packages.
+You can make updates to USWDS with `npm`.
 
 #### Change theme settings
 
+Add custom styles to `_custom-theme.scss` as described in the [uswds repo](https://github.com/uswds/uswds#sass-and-theme-settings).
+
 This site uses custom USWDS theme settings in `_src/assets/uswds-theme`. Use this if you want to include or remove utilities or update utility settings.
 
-1. Compile uswds.css `gulp uswds-build-sass`
-2. Run jekyll `bundle exec jekyll serve`
+1. Compile SASS `gulp compileSass`
+2. Run jekyll `npm run start`
 
-
-#### Only update the USWDS.css without getting new functions and tokens for use in project files
-
-Use this to patch any display bugs through updates to USWDS.
-
-1. Install the package `npm install --save-dev *new-USWDS-version-number*`
-2. Compile uswds.css `gulp uswds-build-sass`
-3. Run jekyll `bundle exec jekyll serve`
-
-#### Update USWDS and get new functions and tokens for use in project files
-
-This will will update some of the scss files in `_src/assets/uswds-sass`, but will not overwrite any of your files in `_src/assets/uswds-theme`.
-
-1. Install the package `npm install --save-dev *new-USWDS-version-number*`
-2. Run `gulp update`
-3. Compile uswds.css `gulp uswds-build-sass`
-4. Run Jekyll `bundle exec jekyll serve`.
 
 ## Contributing
 
