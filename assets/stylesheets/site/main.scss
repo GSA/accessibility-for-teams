@@ -1,36 +1,36 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
----
+// Theme Variables Settings After Diff
+@use "uswds-core" with (
+  $theme-image-path:  '../../img/lib/uswds',
+  $theme-font-path:  '../../fonts/lib/uswds',
+  // colors
+  $theme-color-success-dark: "green-cool-50",
+  $theme-color-success-darker: "green-cool-60",
+  // components
+  $theme-header-font-family: "body",
+  //general
+  $theme-layout-grid-use-important: false,
+  //spacing
+  // $theme-site-max-width: "desktop", DOES NOT EXIST IN 3.0
+  //typography
+  $theme-font-role-heading: "sans",
+  $theme-font-role-alt: "sans",
+  $theme-body-font-family: "sans",
+  $theme-prose-font-family: "sans",
+  $theme-lead-measure: 6,
+  //utilities
+  $utilities-use-important: true,
+ );
 
-// // Define defaults for each variable.
+@forward "uswds-global";
+@forward "uswds-utilities";
+@forward "usa-accordion";
+@forward "usa-banner";
+@forward "usa-button";
+@forward "usa-header";
+@forward "usa-identifier";
+@forward "usa-prose";
+@forward "usa-search";
+@forward "usa-sidenav";
 
-$font-sans:   -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-$font-serif:  -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-
-// $image-path:  '../node_modules/uswds/src/img';
-$image-path:  '../assets/img/lib/uswds';
-
-$nav-width:   64em;
-
-@import 'components/variables';
-
-// Settings
-// -------------------------------------
-@import '../lib/uswds-sass/settings/settings-general';
-@import '../lib/uswds-sass/settings/settings-typography';
-@import '../lib/uswds-sass/settings/settings-color';
-@import '../lib/uswds-sass/settings/settings-spacing';
-@import '../lib/uswds-sass/settings/settings-utilities';
-@import '../lib/uswds-sass/settings/settings-components';
-
-// Tools
-// -------------------------------------
-@import '../lib/uswds-sass/core/functions';
-@import '../lib/uswds-sass/core/system-tokens';
-@import '../lib/uswds-sass/core/variables';
-@import '../lib/uswds-sass/core/properties';
-@import '../lib/uswds-sass/core/mixins/all';
-
-@import '../lib/uswds/styles.css';
-@import '../lib/uswds-theme/uswds-theme-custom-styles';
-@import 'components/custom';
+// @forward "uswds";
+@forward 'custom-theme';
