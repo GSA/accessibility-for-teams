@@ -23,5 +23,8 @@
   },
   "dependencies": {
     "@uswds/uswds": "3.4.1"
+  },
+  "overrides": {
+    "glob-parent": "6.0.2"
   }
 }
