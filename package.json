@@ -22,7 +22,7 @@
     "gulp": "^4.0.2"
   },
   "dependencies": {
-    "@uswds/uswds": "3.7.0"
+    "@uswds/uswds": "3.7.1"
   },
   "overrides": {
     "glob-parent": "6.0.2"
